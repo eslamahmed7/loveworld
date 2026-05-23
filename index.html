@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#130018" />
+    <meta
+      name="description"
+      content="تطبيق رومانسي خاص بمحمود ومريم: شات، ذكريات، خريطة حب، كبسولات زمنية، مزيكا، وإحصائيات."
+    />
+    <title>محمود ❤️ مريم</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="vhs-noise" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="stars-layer" id="starsLayer" aria-hidden="true"></div>
+    <div class="hearts-layer" id="heartsLayer" aria-hidden="true"></div>
+
+    <div id="loader" class="loader">
+      <div class="loader-card">
+        <div class="loader-title glitch" data-text="محمود ❤️ مريم">محمود ❤️ مريم</div>
+        <div class="loader-hearts" aria-hidden="true">
+          <span>❤️</span><span>💗</span><span>✨</span><span>💕</span>
+        </div>
+      </div>
+    </div>
+
+    <main id="authScreen" class="auth-screen hidden">
+      <section class="auth-panel" aria-labelledby="authTitle">
+        <div class="auth-visual" aria-hidden="true">
+          <img src="assets/retro-love-poster.svg" alt="" />
+        </div>
+        <form id="loginForm" class="login-form">
+          <p class="eyebrow">عالم حب خاص</p>
+          <h1 id="authTitle">محمود ❤️ مريم</h1>
+          <label>
+            <span>الإيميل</span>
+            <input id="emailInput" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span>الباسورد</span>
+            <input id="passwordInput" type="password" autocomplete="current-password" required />
+          </label>
+          <button class="primary-btn" type="submit">
+            <i data-lucide="log-in"></i>
+            <span>ادخل لعالمنا</span>
+          </button>
+          <p id="authMessage" class="form-message" role="status"></p>
+          <div id="demoHint" class="demo-hint hidden">
+            <strong>وضع تجريبي:</strong>
+            جرب mahmoud@example.com أو mariam@example.com والباسورد love123456
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div id="appShell" class="app-shell hidden">
+      <header class="topbar">
+        <button class="icon-btn nav-toggle" id="focusChatBtn" type="button" data-action="switch-view" data-view="chat" title="الشات">
+          <i data-lucide="message-circle-heart"></i>
+        </button>
+        <div class="brand-block">
+          <p class="eyebrow">محمود ❤️ مريم</p>
+          <h2 id="pageTitle">الرئيسية</h2>
+        </div>
+        <div class="user-chip" id="userChip"></div>
+        <button class="icon-btn" id="signOutBtn" type="button" title="خروج">
+          <i data-lucide="log-out"></i>
+        </button>
+      </header>
+
+      <section class="presence-strip" id="presenceStrip"></section>
+
+      <main id="viewRoot" class="view-root" aria-live="polite"></main>
+
+      <footer class="site-footer">
+        إهداء من محمود ❤️ إلى مريم، حبيبتي وكل دنيتي
+      </footer>
+
+      <section class="floating-player" id="floatingPlayer" aria-label="مشغل المزيكا">
+        <button class="icon-btn" type="button" data-action="music-toggle" title="تشغيل/إيقاف">
+          <i data-lucide="play"></i>
+        </button>
+        <div class="track-meta">
+          <strong id="playerTrack">مفيش أغنية شغالة</strong>
+          <span id="playerArtist">playlist الحب</span>
+        </div>
+        <button class="icon-btn" type="button" data-action="music-mute" title="كتم الصوت">
+          <i data-lucide="volume-2"></i>
+        </button>
+        <input id="volumeSlider" class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.65" aria-label="الصوت" />
+      </section>
+
+      <nav id="bottomNav" class="bottom-nav" aria-label="التنقل الرئيسي"></nav>
+    </div>
+
+    <dialog id="modal" class="modal">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h3 id="modalTitle"></h3>
+          <button class="icon-btn" type="button" data-action="close-modal" title="قفل">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div id="modalBody"></div>
+      </div>
+    </dialog>
+
+    <audio id="audioPlayer" preload="metadata"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

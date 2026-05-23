@@ -1,0 +1,55 @@
+<svg width="760" height="900" viewBox="0 0 760 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#ff5ab7"/>
+      <stop offset="0.45" stop-color="#3b0a4f"/>
+      <stop offset="1" stop-color="#09000f"/>
+    </radialGradient>
+    <linearGradient id="tape" x1="110" x2="650" y1="550" y2="745" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#21142d"/>
+      <stop offset="0.5" stop-color="#090712"/>
+      <stop offset="1" stop-color="#4b143b"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 1 0 0.2 0 0 0.25 0 0 1 0 0.9 0 0 0 1 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grain" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="3" r="1" fill="#fff" opacity=".2"/>
+      <circle cx="14" cy="8" r="1" fill="#fff" opacity=".14"/>
+      <circle cx="9" cy="17" r="1" fill="#ff99d6" opacity=".16"/>
+    </pattern>
+  </defs>
+  <rect width="760" height="900" rx="46" fill="url(#g1)"/>
+  <rect width="760" height="900" rx="46" fill="url(#grain)" opacity=".35"/>
+  <g opacity=".65">
+    <path d="M65 156h630M65 212h630M65 268h630M65 324h630M65 380h630M65 436h630M65 492h630M65 548h630M65 604h630M65 660h630M65 716h630" stroke="#ffb8df" stroke-opacity=".12" stroke-width="3"/>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M383 434C277 348 210 286 210 204c0-65 50-111 111-111 36 0 70 17 92 45 22-28 56-45 92-45 61 0 111 46 111 111 0 82-67 144-173 230l-30 24-30-24Z" fill="#ff3f9e"/>
+    <path d="M383 434C277 348 210 286 210 204c0-65 50-111 111-111 36 0 70 17 92 45 22-28 56-45 92-45 61 0 111 46 111 111 0 82-67 144-173 230l-30 24-30-24Z" stroke="#ffd1e9" stroke-width="8"/>
+  </g>
+  <g opacity=".9">
+    <circle cx="145" cy="167" r="4" fill="#fff4b0"/>
+    <circle cx="614" cy="228" r="5" fill="#fff4b0"/>
+    <circle cx="560" cy="420" r="3" fill="#fff4b0"/>
+    <circle cx="232" cy="430" r="3" fill="#fff4b0"/>
+    <path d="M114 340l9 19 20 6-20 7-9 19-9-19-20-7 20-6 9-19Z" fill="#fff4b0"/>
+    <path d="M646 114l7 15 16 5-16 5-7 15-7-15-16-5 16-5 7-15Z" fill="#fff4b0"/>
+  </g>
+  <g>
+    <rect x="93" y="552" width="574" height="209" rx="32" fill="url(#tape)" stroke="#ff8ac8" stroke-width="5"/>
+    <rect x="146" y="600" width="468" height="58" rx="15" fill="#f7c0da" opacity=".92"/>
+    <rect x="192" y="681" width="376" height="42" rx="12" fill="#140019" stroke="#e7a34f" stroke-width="4"/>
+    <circle cx="230" cy="682" r="48" fill="#0b0610" stroke="#ffacd6" stroke-width="8"/>
+    <circle cx="530" cy="682" r="48" fill="#0b0610" stroke="#ffacd6" stroke-width="8"/>
+    <circle cx="230" cy="682" r="17" fill="#ff5ab7"/>
+    <circle cx="530" cy="682" r="17" fill="#ff5ab7"/>
+    <text x="380" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="30" fill="#22051e">MAHMOUD + MARIAM</text>
+  </g>
+  <text x="380" y="824" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="42" fill="#ffd7e9">VHS LOVE WORLD</text>
+</svg>
