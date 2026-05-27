@@ -57,23 +57,23 @@ const LOVE_MESSAGES = [
   "من محمود لمريم: بحبك النهارده، وبكرة، وكل يوم ييجي."
 ];
 const MEEN_QUESTIONS = [
-  "مين فينا بيزعل أسرع؟", "مين فينا بيغير أكتر؟", "مين فينا بياكل أكتر؟", 
-  "مين فينا كسول أكتر؟", "مين فينا بيصالح التاني الأول؟", "مين فينا رومانسي أكتر؟", 
-  "مين فينا بيحب ينام كتير؟", "مين فينا بيصرف فلوس أكتر؟", "مين فينا دمه خفيف أكتر؟", 
-  "مين فينا بياخد وقت أطول عشان يجهز؟", "مين فينا بينسى المواعيد؟", "مين فينا مجنون أكتر؟", 
-  "مين فينا عنيد أكتر؟", "مين فينا بيبدأ الكلام دايما؟", "مين فينا مدمن موبايل أكتر؟", 
-  "مين فينا بيقفل في الكلام أسرع وهو زعلان؟", "مين فينا بيطنش الرسايل أكتر؟", 
+  "مين فينا بيزعل أسرع؟", "مين فينا بيغير أكتر؟", "مين فينا بياكل أكتر؟",
+  "مين فينا كسول أكتر؟", "مين فينا بيصالح التاني الأول؟", "مين فينا رومانسي أكتر؟",
+  "مين فينا بيحب ينام كتير؟", "مين فينا بيصرف فلوس أكتر؟", "مين فينا دمه خفيف أكتر؟",
+  "مين فينا بياخد وقت أطول عشان يجهز؟", "مين فينا بينسى المواعيد؟", "مين فينا مجنون أكتر؟",
+  "مين فينا عنيد أكتر؟", "مين فينا بيبدأ الكلام دايما؟", "مين فينا مدمن موبايل أكتر؟",
+  "مين فينا بيقفل في الكلام أسرع وهو زعلان؟", "مين فينا بيطنش الرسايل أكتر؟",
   "مين فينا حنين أكتر؟", "مين فينا صوته بيعلى في الخناق؟", "مين فينا بيعرف يراضي التاني أحسن؟"
 ];
 
 const GAWEBNY_QUESTIONS = [
-  "إيه أكتر حاجة بتعجبك فيا؟", "إيه أول حاجة لفتت انتباهك ليا؟", "إيه أكتر موقف بينا مش ممكن تنساه؟", 
-  "لو هتوصفني في كلمة واحدة هتبقى إيه؟", "إيه أكتر حاجة مجنونة نفسك نعملها سوا؟", 
-  "إمتى حسيت إنك بتحبني بجد؟", "إيه أكتر مكان بتحب نروحه سوا؟", 
-  "لو هتوصف علاقتنا في أغنية هتختار أغنية إيه؟", "إيه أكتر رسالة بعتهالك وفرحتك؟", 
-  "لو زعلت منك، إيه أحسن طريقة أصالحك بيها؟", "إيه أكتر حاجة بتخاف عليها في علاقتنا؟", 
-  "إيه أكتر يوم حسيت فيه إنك أسعد إنسان عشاني؟", "إيه الحاجة اللي بعملها وبتطمنك دايما؟", 
-  "لو افترقنا يوم (لا قدر الله)، إيه أول حاجة هتوحشك؟", "تفتكر إيه السر اللي مخلي علاقتنا قوية؟", 
+  "إيه أكتر حاجة بتعجبك فيا؟", "إيه أول حاجة لفتت انتباهك ليا؟", "إيه أكتر موقف بينا مش ممكن تنساه؟",
+  "لو هتوصفني في كلمة واحدة هتبقى إيه؟", "إيه أكتر حاجة مجنونة نفسك نعملها سوا؟",
+  "إمتى حسيت إنك بتحبني بجد؟", "إيه أكتر مكان بتحب نروحه سوا؟",
+  "لو هتوصف علاقتنا في أغنية هتختار أغنية إيه؟", "إيه أكتر رسالة بعتهالك وفرحتك؟",
+  "لو زعلت منك، إيه أحسن طريقة أصالحك بيها؟", "إيه أكتر حاجة بتخاف عليها في علاقتنا؟",
+  "إيه أكتر يوم حسيت فيه إنك أسعد إنسان عشاني؟", "إيه الحاجة اللي بعملها وبتطمنك دايما؟",
+  "لو افترقنا يوم (لا قدر الله)، إيه أول حاجة هتوحشك؟", "تفتكر إيه السر اللي مخلي علاقتنا قوية؟",
   "نفسك تقولي إيه ومكسوف أو متردد؟", "إيه الموقف اللي حصل بينا وخلاك تتأكد إني الشخص الصح؟"
 ];
 const LAW_KHYAROUK_QUESTIONS = [
@@ -90,6 +90,47 @@ const LAW_KHYAROUK_QUESTIONS = [
   "لو خيروك: نبقى بنقرا أفكار بعض ولا نعرف نشوف مستقبلنا سوا؟",
   "لو خيروك: نتفرج على فيلم رعب وإحنا خايفين ولا فيلم رومانسي وإحنا بنعيط؟"
 ];
+
+const TRUTH_OR_DARE_QUESTIONS = [
+  "حقيقة: إيه أكتر حاجة بتكسفك مني؟",
+  "جرأة: ابعتلي فويس نوت مدتها دقيقة بتغنيلي فيها أغنيتنا المفضلة.",
+  "حقيقة: إمتى أول مرة حسيت إنك عايز تكمل حياتك معايا؟",
+  "جرأة: حط صورتي خلفية لموبايلك لمدة يوم كامل وصورلي الشاشة.",
+  "حقيقة: إيه أكتر عيب فيا نفسك أغيره؟",
+  "جرأة: اكتبلي رسالة حب طويلة وابعتهالي دلوقتي حالا.",
+  "حقيقة: إيه أكتر حاجة مجنونة عملتها عشاني؟",
+  "جرأة: قلدني في أكتر حركة بعملها وبتستفزك.",
+  "حقيقة: إيه أكتر حاجة بتخليك تغير عليا؟",
+  "جرأة: اتصل بيا دلوقتي وقولي نكتة بايخة وحاول تخليني أضحك.",
+  "حقيقة: لو طلبوا منك تمسح كل صوري ما عدا صورة واحدة، هتختار أي صورة؟",
+  "جرأة: اعملي فيديو صغير بتقولي فيه 5 أسباب بتخليك تحبني."
+];
+
+const NEVER_HAVE_I_EVER_QUESTIONS = [
+  "عمرك مثلت إنك نايم عشان تتهرب من مكالمتي؟",
+  "عمرك قريت رسايلي من بره من غير ما تفتح الشات عشان مردش؟",
+  "عمرك نسيت مناسبة مهمة بينا وعملت نفسك فاكر؟",
+  "عمرك زعلت مني ومارضيتش تقولي عشان مبوظش اليوم؟",
+  "عمرك عملت سكرين شوت لرسالة بيني وبينك عشان تقراها كتير؟",
+  "عمرك بصيت على صوري وإنت زعلان مني عشان تهدى؟",
+  "عمرك فتحت بروفايلي في نص الليل بس عشان تطمن إني قفلت؟",
+  "عمرك كذبت عليا كذبة بيضا عشان تفرحني؟",
+  "عمرك شفت لبس عليا مكنش عاجبك بس قلتلي إنه حلو؟",
+  "عمرك جهزت كلام تقولهولي ونسيته أول ما شفتني؟"
+];
+
+const ROLEPLAY_QUESTIONS = [
+  "لو صحينا لقينا نفسنا في جزيرة مهجورة، إيه أول ٣ حاجات هنعملها؟",
+  "لو كسبنا مليون دولار دلوقتي حالا، هنصرفهم إزاي سوا؟",
+  "لو نقدر نسافر بالزمن، تحب نرجع لأي يوم عشناه سوا عشان نعيشه تاني؟",
+  "لو حياتنا دي فيلم، تفتكر هيكون اسمه إيه ومين أبطاله؟",
+  "لو افترضنا إننا فقدنا الذاكرة، إزاي هتحاول تخليني أحبك من أول وجديد؟",
+  "لو أنا اختفيت فجأة وسبتلك رسالة مشفرة، تفتكر هتعرف تلاقيني؟",
+  "لو عندك فرصة تبدل مكاني ليوم واحد، إيه أول حاجة هتعملها؟",
+  "لو احنا الاتنين حيوانات أليفة، تفتكر أنا هبقى إيه وإنت إيه؟"
+];
+
+
 
 const CONFIG = {
   SUPABASE_URL: "",
@@ -111,9 +152,9 @@ const SUPABASE_READY = Boolean(
 
 const sb = SUPABASE_READY
   ? window.supabase.createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY, {
-      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
-      realtime: { params: { eventsPerSecond: 10 } }
-    })
+    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
+    realtime: { params: { eventsPerSecond: 10 } }
+  })
   : null;
 
 const $ = (selector, root = document) => root.querySelector(selector);
@@ -140,7 +181,6 @@ const state = {
   presence: [],
   onlineUsers: {},
   typingBy: null,
-  aiLog: [],
   recording: null,
   currentSong: null,
   countersTimer: null,
@@ -160,26 +200,23 @@ const els = {
   pageTitle: $("#pageTitle"),
   userChip: $("#userChip"),
   presenceStrip: $("#presenceStrip"),
-  signOutBtn: $("#signOutBtn"),
   modal: $("#modal"),
   modalTitle: $("#modalTitle"),
   modalBody: $("#modalBody"),
   audioPlayer: $("#audioPlayer"),
-  playerTrack: $("#playerTrack"),
-  playerArtist: $("#playerArtist"),
-  volumeSlider: $("#volumeSlider")
+  playerTrack: $("#activePlayerTitle"),
+  playerArtist: $("#activePlayerArtist"),
+  mainMusicProgress: $("#activePlayerProgress"),
+  activePlayerBar: $("#activePlayerBar"),
+  activePlayerCover: $("#activePlayerCover"),
+  playerVolumeSlider: $("#playerVolumeSlider")
 };
 
 const navItems = [
   ["home", "الرئيسية", "heart"],
   ["memories", "الذكريات", "images"],
-  ["timeline", "الزمن", "calendar-days"],
-  ["games", "الألعاب", "gamepad-2"],
+  ["entertainment", "الترفيه", "party-popper"],
   ["chat", "الشات", "message-circle-heart"],
-  ["capsules", "الكبسولات", "lock-keyhole"],
-  ["music", "المزيكا", "music-2"],
-  ["bucket", "الأحلام", "list-checks"],
-  ["ai", "AI", "sparkles"],
   ["stats", "الإحصائيات", "bar-chart-3"]
 ];
 
@@ -189,31 +226,43 @@ async function boot() {
   createAmbientVisuals();
   renderNav();
   wireEvents();
+  initDraggableMusic();
   els.demoHint.classList.toggle("hidden", SUPABASE_READY);
   await delay(650);
 
   if (SUPABASE_READY) {
     const { data } = await sb.auth.getSession();
     if (data.session?.user) {
-      await enterApp(data.session.user);
+      await enterApp(data.session.user, false);
     } else {
       showAuth();
     }
   } else {
     const sessionUserId = localStorage.getItem("love-world-session-user-id");
     const sessionUser = localDB().users.find((user) => user.id === sessionUserId);
-    if (sessionUser) await enterApp(sessionUser);
+    if (sessionUser) await enterApp(sessionUser, false);
     else showAuth();
   }
 
-  els.loader.classList.add("is-done");
-  setTimeout(() => els.loader.classList.add("hidden"), 520);
+  const introVideo = document.getElementById("introVideo");
+  const skipBtn = document.getElementById("skipIntroBtn");
+
+  const finishIntro = () => {
+    if (window.onIntroFinished) {
+      window.onIntroFinished();
+    }
+  };
+
+  if (introVideo) {
+    introVideo.addEventListener("ended", finishIntro);
+    introVideo.addEventListener("error", finishIntro);
+    if (skipBtn) skipBtn.addEventListener("click", finishIntro);
+  }
   state.booted = true;
 }
 
 function wireEvents() {
   els.loginForm.addEventListener("submit", handleLogin);
-  els.signOutBtn.addEventListener("click", signOut);
   els.bottomNav.addEventListener("click", handleNavClick);
   els.appShell.addEventListener("click", handleActionClick);
   els.appShell.addEventListener("submit", handleSubmit);
@@ -226,10 +275,55 @@ function wireEvents() {
   els.modal.addEventListener("submit", handleSubmit);
   els.modal.addEventListener("input", handleInput);
   els.modal.addEventListener("change", handleChange);
-  els.volumeSlider.addEventListener("input", () => {
-    els.audioPlayer.volume = Number(els.volumeSlider.value);
+  if (els.mainMusicProgress) {
+    els.mainMusicProgress.addEventListener("input", () => {
+      if (els.audioPlayer.duration) {
+        els.audioPlayer.currentTime = (els.mainMusicProgress.value / 100) * els.audioPlayer.duration;
+        const fill = document.getElementById("activePlayerProgressFill");
+        if (fill) fill.style.width = `${els.mainMusicProgress.value}%`;
+      }
+    });
+  }
+  els.audioPlayer.addEventListener("timeupdate", () => {
+    if (els.audioPlayer.duration && els.mainMusicProgress) {
+      const current = els.audioPlayer.currentTime;
+      const duration = els.audioPlayer.duration;
+      const percent = (current / duration) * 100;
+      els.mainMusicProgress.value = percent;
+
+      const fill = document.getElementById("activePlayerProgressFill");
+      if (fill) fill.style.width = `${percent}%`;
+
+      const curLabel = document.getElementById("playerCurrentTime");
+      const remLabel = document.getElementById("playerRemainingTime");
+      if (curLabel) curLabel.textContent = formatAudioTime(current);
+      if (remLabel) remLabel.textContent = "-" + formatAudioTime(duration - current);
+    }
   });
-  els.audioPlayer.addEventListener("ended", playNextSong);
+  els.audioPlayer.addEventListener("ended", () => {
+    if (state.musicRepeat) {
+      els.audioPlayer.currentTime = 0;
+      els.audioPlayer.play().catch(() => { });
+    } else {
+      playNextSong();
+    }
+  });
+  if (els.playerVolumeSlider) {
+    els.playerVolumeSlider.addEventListener("input", () => {
+      els.audioPlayer.volume = els.playerVolumeSlider.value / 100;
+      updateVolumeIcon();
+    });
+  }
+
+  const previewModal = $("#mediaPreviewModal");
+  if (previewModal) {
+    previewModal.addEventListener("click", (event) => {
+      if (event.target === previewModal) closeMediaPreview();
+      else handleActionClick(event);
+    });
+  }
+  $("#confirmMediaBtn")?.addEventListener("click", confirmMediaUpload);
+
   document.addEventListener("visibilitychange", () => {
     if (state.user) updatePresence(document.visibilityState === "visible");
   });
@@ -271,21 +365,91 @@ function showAuth() {
   iconRefresh();
 }
 
-async function enterApp(authUser) {
+async function enterApp(authUser, isManual = false) {
   state.user = authUser;
   window.currentLoveUser = authUser;
   await ensureProfile();
   await refreshAll();
   await ensureLoveMessages();
   await refreshAll();
-  els.authScreen.classList.add("hidden");
-  els.appShell.classList.remove("hidden");
-  renderChrome();
-  renderView("home");
-  startCounters();
+
+  if (isManual) {
+    const loader = document.getElementById("loader");
+    const introVideo = document.getElementById("introVideo");
+
+    // Prepare loader
+    loader.classList.remove("hidden");
+    loader.classList.remove("is-done");
+
+    // Hide auth screen
+    els.authScreen.classList.add("hidden");
+
+    // Play intro video with audio enabled
+    if (introVideo) {
+      introVideo.currentTime = 0;
+      introVideo.muted = false;
+      introVideo.play().catch((err) => {
+        console.log("Play unmuted failed, trying muted...", err);
+        introVideo.muted = true;
+        introVideo.play().catch(e => console.error("Play muted failed too: ", e));
+      });
+    }
+
+    // Set fallback timeout (15 seconds)
+    let fallbackTimer = setTimeout(() => {
+      finishTransition();
+    }, 15000);
+
+    const finishTransition = () => {
+      clearTimeout(fallbackTimer);
+      if (loader.classList.contains("is-done")) return;
+
+      if (introVideo) {
+        introVideo.pause();
+      }
+
+      loader.classList.add("is-done");
+      els.appShell.classList.remove("hidden");
+      els.appShell.classList.add("app-shell-transition");
+
+      renderChrome();
+      renderView("home");
+      startCounters();
+
+      setTimeout(() => {
+        loader.classList.add("hidden");
+        els.appShell.classList.remove("app-shell-transition");
+      }, 1200);
+    };
+
+    window.onIntroFinished = finishTransition;
+  } else {
+    // Auto login: enter directly
+    els.authScreen.classList.add("hidden");
+    els.appShell.classList.remove("hidden");
+    renderChrome();
+    renderView("home");
+    startCounters();
+  }
+
+  if (state.refreshTimer) clearInterval(state.refreshTimer);
+  state.refreshTimer = setInterval(async () => {
+    if (state.view === "chat") {
+      const oldLen = state.messages.length;
+      await refreshAll();
+      if (state.messages.length > oldLen) {
+        renderView("chat");
+      }
+    }
+  }, 2000);
   checkCelebrations(); // <-- السطر اللي هيشغل المفاجأة
   await setupRealtime();
   await updatePresence(true);
+
+  if (state.presenceUpdateTimer) clearInterval(state.presenceUpdateTimer);
+  state.presenceUpdateTimer = setInterval(() => {
+    if (document.visibilityState === "visible") updatePresence(true);
+  }, 60000);
 }
 
 async function ensureProfile() {
@@ -310,10 +474,21 @@ async function ensureProfile() {
     } else {
       state.profile = data;
     }
-    return;
+  } else {
+    state.profile = localDB().users.find((user) => user.id === state.user.id);
   }
 
-  state.profile = localDB().users.find((user) => user.id === state.user.id);
+  // Merge locally-stored bio & avatar if DB columns don't exist yet
+  if (state.user && state.profile) {
+    if (!state.profile.bio) {
+      const localBio = localStorage.getItem('profile-bio-' + state.user.id);
+      if (localBio) state.profile.bio = localBio;
+    }
+    if (!state.profile.avatar_url) {
+      const localAvatar = localStorage.getItem('profile-avatar-' + state.user.id);
+      if (localAvatar) state.profile.avatar_url = localAvatar;
+    }
+  }
 }
 
 async function handleLogin(event) {
@@ -326,10 +501,10 @@ async function handleLogin(event) {
     if (SUPABASE_READY) {
       const { data, error } = await sb.auth.signInWithPassword({ email, password });
       if (error) throw error;
-      await enterApp(data.user);
+      await enterApp(data.user, true);
     } else {
       const localUser = localLogin(email, password);
-      await enterApp(localUser);
+      await enterApp(localUser, true);
     }
     els.authMessage.textContent = "";
   } catch (error) {
@@ -478,18 +653,49 @@ async function hydrateStorageUrls() {
 function renderNav() {
   els.bottomNav.innerHTML = navItems
     .map(([id, label, icon]) => `
-      <button class="nav-btn ${state.view === id ? "active" : ""}" type="button" data-view="${id}" title="${label}">
+      <button class="nav-btn ${state.view === id ? "active" : ""}" type="button" data-action="switch-view" data-view="${id}" title="${label}">
         <i data-lucide="${icon}"></i>
         <span>${label}</span>
       </button>
     `)
     .join("");
+
+  const desktopSidebar = document.getElementById("desktopSidebar");
+  if (desktopSidebar) {
+    desktopSidebar.innerHTML = `
+      <div class="sidebar-brand">
+        <h3 style="color: var(--gold); letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 24px;">NAVIGATION MENU</h3>
+        <img src="${state.user?.avatar || 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=150&q=80'}" alt="logo" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--border); box-shadow: 0 0 16px rgba(56, 189, 248, 0.4);" />
+        <h3 style="margin: 12px 0 0; color: var(--text);">محمود، مريم</h3>
+      </div>
+      <div class="desktop-nav-menu" style="flex: 1;">
+        ${navItems.filter(i => !(window.innerWidth >= 1024 && i[0] === 'chat')).map(([id, label, icon]) => `
+          <button class="desktop-nav-btn ${state.view === id ? "active" : ""}" type="button" data-action="switch-view" data-view="${id}">
+            <i data-lucide="${icon}"></i>
+            <span>${label}</span>
+          </button>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  const centerTabs = document.getElementById("centerNavTabs");
+  if (centerTabs) {
+    centerTabs.innerHTML = navItems
+      .filter(i => i[0] !== 'chat')
+      .map(([id, label]) => `
+      <button class="tab-btn ${state.view === id ? "active" : ""}" type="button" data-action="switch-view" data-view="${id}" style="background: transparent; border: none; color: ${state.view === id ? 'var(--gold)' : 'var(--muted)'}; font-weight: ${state.view === id ? 'bold' : 'normal'}; padding: 8px 16px; border-bottom: 2px solid ${state.view === id ? 'var(--gold)' : 'transparent'}; cursor: pointer; white-space: nowrap; transition: 0.3s;">${label}</button>
+    `).join("");
+  }
+
   iconRefresh();
 }
 
 function renderChrome() {
-  const display = displayName(state.profile);
-  els.userChip.innerHTML = `<span class="avatar">${display.slice(0, 1)}</span><span>${display}</span>`;
+  const display = state.user ? displayName(state.profile) : "زائر";
+  if (els.userChip) {
+    els.userChip.innerHTML = `<span class="avatar">${display.slice(0, 1)}</span><span>${display}</span>`;
+  }
   renderPresence();
 }
 
@@ -500,8 +706,8 @@ function renderPresence() {
     .filter((user) => ["Mahmoud", "Mariam"].includes(user.name) || ["محمود", "مريم"].includes(user.display_name))
     .map((user) => {
       const record = state.presence.find((item) => item.user_id === user.id);
-      const online = onlineIds.has(user.id) || record?.is_online;
-      const subtitle = online ? "أونلاين" : record?.last_seen ? `آخر ظهور ${timeAgo(record.last_seen)}` : "أوفلاين";
+      const online = SUPABASE_READY ? onlineIds.has(user.id) : (onlineIds.has(user.id) || record?.is_online);
+      const subtitle = online ? "أونلاين دلوقتي" : record?.last_seen ? `قافل من ${timeAgo(record.last_seen)}` : "أوفلاين";
       return `
         <span class="presence-pill">
           <span class="presence-dot ${online ? "online" : ""}"></span>
@@ -515,32 +721,74 @@ function renderPresence() {
 }
 
 function renderView(view = state.view) {
+  const isDesktop = window.innerWidth >= 1024;
+
+  if (isDesktop && view === "chat") {
+    view = "home"; // Redirect chat requests to home on desktop since chat is always visible
+  }
+
   state.view = view;
+
+  // Toggle visibility of presence strip and footer, and update layout class
+  const isChat = view === "chat";
+  if (els.presenceStrip) {
+    els.presenceStrip.classList.toggle("hidden", isChat);
+  }
+  const footer = document.querySelector(".site-footer");
+  if (footer) {
+    footer.classList.toggle("hidden", isChat);
+  }
+  const wrapper = document.querySelector(".main-content-wrapper");
+  if (wrapper) {
+    wrapper.classList.toggle("chat-layout-active", isChat);
+  }
+
   const nav = navItems.find((item) => item[0] === view);
-  els.pageTitle.textContent = nav?.[1] || "الرئيسية";
+  if (els.pageTitle) {
+    els.pageTitle.textContent = nav?.[1] || "الرئيسية";
+  }
   renderNav();
 
   const renderers = {
     home: renderHome,
     memories: renderMemories,
-    timeline: renderTimeline,
-    games: renderGames,
+    entertainment: renderEntertainment,
     chat: renderChat,
     capsules: renderCapsules,
-    music: renderMusic,
-    bucket: renderBucket,
-    ai: renderAI,
     stats: renderStats
   };
 
   els.viewRoot.innerHTML = renderers[view]?.() || renderHome();
-  iconRefresh();
 
-  if (view === "chat") {
-    markSeenMessages();
+  if (isDesktop) {
+    const desktopChat = document.getElementById("desktopChat");
+    if (desktopChat) desktopChat.innerHTML = renderChat();
     requestAnimationFrame(scrollChatToBottom);
+    markSeenMessages();
+  } else {
+    const desktopChat = document.getElementById("desktopChat");
+    if (desktopChat) desktopChat.innerHTML = "";
+
+    if (view === "chat") {
+      markSeenMessages();
+      requestAnimationFrame(scrollChatToBottom);
+    }
   }
+
+  updatePlayerVisibility();
+  iconRefresh();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+// Add window resize listener to auto-refresh view when switching desktop/mobile
+window.addEventListener("resize", () => {
+  if (state.user && !els.appShell.classList.contains("hidden")) {
+    clearTimeout(window.resizeTimeout);
+    window.resizeTimeout = setTimeout(() => {
+      renderView(state.view);
+    }, 200);
+  }
+});
 
 function renderHome() {
   const relation = relationCounter();
@@ -550,7 +798,28 @@ function renderHome() {
   const onThisDay = getOnThisDay();
   const starred = getStarMemories().slice(0, 3);
 
+  const myName = state.profile?.name === 'Mahmoud' ? 'محمود' : 'مريم';
+  const myAvatar = state.profile?.avatar_url || 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=150&q=80';
+
   return `
+    <section class="surface" style="display:flex; justify-content:space-between; align-items:center; padding: 15px 20px;">
+      <div style="display:flex; align-items:center; gap: 15px;">
+        <div style="position:relative; cursor:pointer;" data-action="open-profile-form" title="تعديل الملف الشخصي">
+          <img src="${escapeAttr(myAvatar)}" alt="Profile" style="width:50px; height:50px; border-radius:50%; border:2px solid var(--pink); object-fit:cover; display:block;">
+          <div style="position:absolute; bottom:-4px; right:-4px; background:var(--surface); border-radius:50%; padding:4px; box-shadow:0 0 5px rgba(0,0,0,0.5);">
+            <i data-lucide="pencil" style="width:12px; height:12px; color:var(--text); display:block;"></i>
+          </div>
+        </div>
+        <div>
+          <p style="margin:0; font-size:0.9rem; color:var(--muted);">أهلاً بيك يا</p>
+          <h3 style="margin:0; color:var(--gold); font-size:1.1rem;">${escapeHTML(state.profile?.display_name || myName)}</h3>
+        </div>
+      </div>
+      <button class="icon-btn danger-btn" type="button" data-action="sign-out" title="تسجيل خروج">
+        <i data-lucide="log-out"></i>
+      </button>
+    </section>
+
     <section class="surface">
       <div class="section-head">
         <h3>عداد حبنا من 21-07-2023</h3>
@@ -707,12 +976,51 @@ function renderTimeline() {
   `;
 }
 
-function renderGames() {
+function renderEntertainment() {
+  const activeTab = sessionStorage.getItem("entertainment-tab") || "games";
+
+  if (state.activeGame) {
+    return renderGamesContent();
+  }
+
+  let contentHtml = "";
+  if (activeTab === "games") contentHtml = renderGamesContent();
+  else if (activeTab === "music") contentHtml = renderMusic();
+  else if (activeTab === "bucket") contentHtml = renderBucket();
+
+  return `
+    <section class="surface" style="background: transparent; border: none; box-shadow: none; padding: 0;">
+      <div class="section-head" style="margin-bottom: 20px;">
+        <div>
+          <h3 style="font-size: 1.8rem; text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);">الترفيه 🎪</h3>
+        </div>
+      </div>
+      
+      <div class="music-tab-row" style="margin-bottom: 16px;">
+        <button class="music-tab-btn ${activeTab === "games" ? "active" : ""}" type="button" data-action="set-entertainment-tab" data-tab="games">الألعاب 🎮</button>
+        <button class="music-tab-btn ${activeTab === "music" ? "active" : ""}" type="button" data-action="set-entertainment-tab" data-tab="music">المزيكا 🎵</button>
+        <button class="music-tab-btn ${activeTab === "bucket" ? "active" : ""}" type="button" data-action="set-entertainment-tab" data-tab="bucket">الأحلام 📝</button>
+      </div>
+
+      ${contentHtml}
+    </section>
+  `;
+}
+
+function renderGamesContent() {
   if (state.activeGame) {
     const game = state.activeGame;
-    const gameName = game.id === "meen" ? "لعبة مين فينا 🤷‍♂️🤷‍♀️" : (game.id === "gawebny" ? "لعبة جاوبني 💬" : "لعبة لو خيروك ⚖️");
     const amIAsker = game.asker === state.user.id;
     const amIAnswerer = game.answerer === state.user.id;
+
+
+    let gameName = "لعبة";
+    if (game.id === "meen") gameName = "مين فين؟ 🤷‍♂️🤷‍♀️";
+    if (game.id === "gawebny") gameName = "جاوبني بصراحة 💬";
+    if (game.id === "law") gameName = "لو خيروك ⚖️";
+    if (game.id === "truth_dare") gameName = "حقيقة ولا جرأة؟ 🎲";
+    if (game.id === "never_ever") gameName = "عمرك عملت كذا؟ 🤫";
+    if (game.id === "roleplay") gameName = "لو حصل كذا؟ 🎬";
 
     let roleText = "";
     if (game.id === "meen") {
@@ -745,28 +1053,61 @@ function renderGames() {
   }
 
   return `
-    <section class="surface">
-      <div class="section-head">
-        <h3>ألعابنا سوا 🎮</h3>
+      <div class="grid three games-grid-mobile" style="padding-top: 10px;">
+        <button class="surface memory-card" style="text-align:center; padding: 30px 20px; cursor: pointer; transition: 0.3s; display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 250px; background: rgba(15,23,42,0.8); border: 1px solid var(--blue); box-shadow: 0 0 30px rgba(56, 189, 248, 0.15), inset 0 0 20px rgba(56, 189, 248, 0.05); border-radius: 24px;" type="button" data-action="start-game" data-id="meen">
+          <div>
+            <span style="font-size: 3.5rem; display: block; margin-bottom: 10px; text-shadow: 0 0 20px rgba(56,189,248,0.5);">❓</span>
+            <h3 style="margin: 15px 0; color: var(--blue);">Meen Feen?</h3>
+            <p class="muted" style="font-size: 0.8rem;">مين فين هتعملوا كذا وكذا؟</p>
+          </div>
+          <div style="padding: 10px 20px; border-radius: 12px; background: linear-gradient(135deg, rgba(56,189,248,0.2), transparent); border: 1px solid var(--blue); color: var(--blue); font-weight: bold; width: 100%; margin-top: 20px;">ابدأ اللعبة</div>
+        </button>
+        
+        <button class="surface memory-card" style="text-align:center; padding: 30px 20px; cursor: pointer; transition: 0.3s; display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 250px; background: rgba(15,23,42,0.8); border: 1px solid var(--gold); box-shadow: 0 0 30px rgba(251, 191, 36, 0.15), inset 0 0 20px rgba(251, 191, 36, 0.05); border-radius: 24px;" type="button" data-action="start-game" data-id="gawebny">
+          <div>
+            <span style="font-size: 3.5rem; display: block; margin-bottom: 10px; text-shadow: 0 0 20px rgba(251,191,36,0.5);">💬</span>
+            <h3 style="margin: 15px 0; color: var(--gold);">Gawebny Be-Sara7a</h3>
+            <p class="muted" style="font-size: 0.8rem;">جاوبني صراحة وبدون كدب!</p>
+          </div>
+          <div style="padding: 10px 20px; border-radius: 12px; background: linear-gradient(135deg, rgba(251,191,36,0.2), transparent); border: 1px solid var(--gold); color: var(--gold); font-weight: bold; width: 100%; margin-top: 20px;">ابدأ اللعبة</div>
+        </button>
+        
+        <button class="surface memory-card" style="text-align:center; padding: 30px 20px; cursor: pointer; transition: 0.3s; display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 250px; background: rgba(15,23,42,0.8); border: 1px solid var(--pink); box-shadow: 0 0 30px rgba(236, 72, 153, 0.15), inset 0 0 20px rgba(236, 72, 153, 0.05); border-radius: 24px;" type="button" data-action="start-game" data-id="law">
+          <div>
+            <span style="font-size: 3.5rem; display: block; margin-bottom: 10px; text-shadow: 0 0 20px rgba(236,72,153,0.5);">🎭</span>
+            <h3 style="margin: 15px 0; color: var(--pink);">Law Kherouk?</h3>
+            <p class="muted" style="font-size: 0.8rem;">لو خيروك بين ده وده؟</p>
+          </div>
+          <div style="padding: 10px 20px; border-radius: 12px; background: linear-gradient(135deg, rgba(236,72,153,0.2), transparent); border: 1px solid var(--pink); color: var(--pink); font-weight: bold; width: 100%; margin-top: 20px;">ابدأ اللعبة</div>
+        </button>
+
+        <button class="surface memory-card" style="text-align:center; padding: 30px 20px; cursor: pointer; transition: 0.3s; display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 250px; background: rgba(15,23,42,0.8); border: 1px solid var(--danger); box-shadow: 0 0 30px rgba(239, 68, 68, 0.15), inset 0 0 20px rgba(239, 68, 68, 0.05); border-radius: 24px;" type="button" data-action="start-game" data-id="truth_dare">
+          <div>
+            <span style="font-size: 3.5rem; display: block; margin-bottom: 10px; text-shadow: 0 0 20px rgba(239,68,68,0.5);">🎲</span>
+            <h3 style="margin: 15px 0; color: var(--danger);">حقيقة ولا جرأة؟</h3>
+            <p class="muted" style="font-size: 0.8rem;">الصراحة راحة.. والجرأة متعة!</p>
+          </div>
+          <div style="padding: 10px 20px; border-radius: 12px; background: linear-gradient(135deg, rgba(239,68,68,0.2), transparent); border: 1px solid var(--danger); color: var(--danger); font-weight: bold; width: 100%; margin-top: 20px;">ابدأ اللعبة</div>
+        </button>
+
+        <button class="surface memory-card" style="text-align:center; padding: 30px 20px; cursor: pointer; transition: 0.3s; display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 250px; background: rgba(15,23,42,0.8); border: 1px solid var(--purple); box-shadow: 0 0 30px rgba(139, 92, 246, 0.15), inset 0 0 20px rgba(139, 92, 246, 0.05); border-radius: 24px;" type="button" data-action="start-game" data-id="never_ever">
+          <div>
+            <span style="font-size: 3.5rem; display: block; margin-bottom: 10px; text-shadow: 0 0 20px rgba(139,92,246,0.5);">🤫</span>
+            <h3 style="margin: 15px 0; color: var(--purple);">عمرك عملت كذا؟</h3>
+            <p class="muted" style="font-size: 0.8rem;">اكتشف أسرار ومواقف مضحكة!</p>
+          </div>
+          <div style="padding: 10px 20px; border-radius: 12px; background: linear-gradient(135deg, rgba(139,92,246,0.2), transparent); border: 1px solid var(--purple); color: var(--purple); font-weight: bold; width: 100%; margin-top: 20px;">ابدأ اللعبة</div>
+        </button>
+
+        <button class="surface memory-card" style="text-align:center; padding: 30px 20px; cursor: pointer; transition: 0.3s; display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 250px; background: rgba(15,23,42,0.8); border: 1px solid var(--green); box-shadow: 0 0 30px rgba(52, 211, 153, 0.15), inset 0 0 20px rgba(52, 211, 153, 0.05); border-radius: 24px;" type="button" data-action="start-game" data-id="roleplay">
+          <div>
+            <span style="font-size: 3.5rem; display: block; margin-bottom: 10px; text-shadow: 0 0 20px rgba(52,211,153,0.5);">🎬</span>
+            <h3 style="margin: 15px 0; color: var(--green);">لو حصل كذا؟</h3>
+            <p class="muted" style="font-size: 0.8rem;">تخيلات ومواقف مجنونة!</p>
+          </div>
+          <div style="padding: 10px 20px; border-radius: 12px; background: linear-gradient(135deg, rgba(52,211,153,0.2), transparent); border: 1px solid var(--green); color: var(--green); font-weight: bold; width: 100%; margin-top: 20px;">ابدأ اللعبة</div>
+        </button>
       </div>
-      <div class="grid three">
-        <button class="surface memory-card" style="text-align:center; padding: 30px; cursor: pointer; transition: 0.2s;" type="button" data-action="start-game" data-id="meen">
-          <span style="font-size: 4rem; display: block; margin-bottom: 10px;">🤷‍♂️</span>
-          <h3 style="margin: 15px 0;">مين فينا؟</h3>
-          <p class="muted">أسئلة عشوائية وتشوفوا مين فيكوا بينطبق عليه الكلام أكتر!</p>
-        </button>
-        <button class="surface memory-card" style="text-align:center; padding: 30px; cursor: pointer; transition: 0.2s;" type="button" data-action="start-game" data-id="gawebny">
-          <span style="font-size: 4rem; display: block; margin-bottom: 10px;">💬</span>
-          <h3 style="margin: 15px 0;">جاوبني بصراحة</h3>
-          <p class="muted">كل واحد بييجي عليه الدور يسأل التاني سؤال ولازم يجاوب من غير كدب!</p>
-        </button>
-        <button class="surface memory-card" style="text-align:center; padding: 30px; cursor: pointer; transition: 0.2s;" type="button" data-action="start-game" data-id="law">
-          <span style="font-size: 4rem; display: block; margin-bottom: 10px;">⚖️</span>
-          <h3 style="margin: 15px 0;">لو خيروك</h3>
-          <p class="muted">أسئلة محيرة واختيارات صعبة.. تختار ده ولا ده؟</p>
-        </button>
-      </div>
-    </section>
   `;
 }
 
@@ -776,34 +1117,100 @@ function renderChat() {
     ? `<div class="typing">${escapeHTML(state.typingBy)} بتكتب...</div>`
     : `<div class="typing"></div>`;
 
+  const savedBg = localStorage.getItem('chat-bg') || "url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1000&q=80')";
+  const bgSize = localStorage.getItem('chat-bg-size') || 'cover';
+  const bgPosition = localStorage.getItem('chat-bg-pos') || 'center';
+  const savedTheme = localStorage.getItem('chat-theme') || 'default';
+
+  const otherUser = state.profiles.find(u => u.id !== state.user.id) || localDB().users.find(u => u.id !== state.user.id);
+  let otherStatus = "أوفلاين";
+  if (otherUser) {
+    const record = state.presence.find(p => p.user_id === otherUser.id);
+    const onlineIds = new Set(Object.keys(state.onlineUsers));
+    const online = SUPABASE_READY ? onlineIds.has(otherUser.id) : (onlineIds.has(otherUser.id) || record?.is_online);
+    otherStatus = online ? "أونلاين دلوقتي" : record?.last_seen ? `قافل من ${timeAgo(record.last_seen)}` : "أوفلاين";
+  }
+
   return `
-    <section class="surface chat-shell">
-      <div class="chat-head">
-        <div>
-          <h3>الشات</h3>
-          <p class="muted">${otherName} ${isOtherOnline() ? "أونلاين دلوقتي" : "مش أونلاين حاليا"}</p>
+    <section class="surface chat-shell theme-${savedTheme}" style="padding: 0; display: flex; flex-direction: column; overflow: hidden;">
+      <div class="chat-head" style="padding: 16px 20px; background: rgba(10, 0, 15, 0.85); z-index: 10; display: flex; align-items: center; justify-content: space-between;">
+        
+        <div style="display:flex; align-items:center; gap: 15px;">
+          <img src="${escapeAttr(otherUser?.avatar_url || 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=150&q=80')}" alt="${escapeAttr(otherUser?.display_name || otherName)}" style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid var(--pink); object-fit: cover;">
+          <div>
+            <h3 style="margin: 0; font-size: 1.2rem;">${escapeHTML(otherUser?.display_name || otherName)}</h3>
+            <p class="muted" style="margin: 4px 0 0; font-size: 0.85rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+              <span class="presence-dot ${otherStatus.includes('دلوقتي') ? 'online' : ''}" style="display: inline-block; vertical-align: middle;"></span>
+              <span style="color: ${otherStatus.includes('دلوقتي') ? 'var(--green)' : 'inherit'}; font-weight: ${otherStatus.includes('دلوقتي') ? 'bold' : 'normal'};">${otherStatus}</span>
+              ${otherUser?.bio ? ` • <span style="opacity: 0.8; max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${escapeHTML(otherUser.bio)}</span>` : ''}
+            </p>
+          </div>
         </div>
-        <button class="secondary-btn" type="button" data-action="refresh-chat">
-          <i data-lucide="refresh-cw"></i>
-          تحديث
-        </button>
+
+        <div style="display: flex; gap: 10px;">
+          <button class="secondary-btn" type="button" data-action="open-chat-settings" style="padding: 8px 12px; font-size: 0.9rem; background: rgba(236,72,153,0.15); border-color: var(--pink); color: var(--pink);" title="تعديل الشات">
+            <i data-lucide="settings"></i>
+          </button>
+        </div>
       </div>
-      <div id="messagesList" class="messages-list">
-        ${state.messages.length ? state.messages.map(renderMessage).join("") : empty("ابدأوا أول رسالة في الشات.")}
+      
+      <div id="messagesList" class="messages-list" style="flex: 1; background-image: linear-gradient(var(--chat-overlay, rgba(10, 0, 15, 0.75)), var(--chat-overlay, rgba(10, 0, 15, 0.85))), ${savedBg}; background-size: ${escapeAttr(bgSize)}; background-position: ${escapeAttr(bgPosition)}; background-repeat: no-repeat; border-radius: 0; padding: 20px 10px;">
+        ${(() => {
+      if (!state.messages.length) return empty("ابدأوا أول رسالة في الشات.");
+      let currentDay = "";
+      return state.messages.map(msg => {
+        const d = new Date(msg.created_at);
+        const dayStr = d.toLocaleDateString('ar-EG', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        let divider = "";
+        if (dayStr !== currentDay) {
+          currentDay = dayStr;
+          divider = `<div class="date-divider" style="text-align:center; margin: 16px 0; font-size: 0.8rem; color: var(--muted);"><span style="background: rgba(255,255,255,0.05); padding: 4px 12px; border-radius: 12px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">${dayStr}</span></div>`;
+        }
+        return divider + renderMessage(msg);
+      }).join("");
+    })()}
+        
       </div>
-      ${typing}
-      <form class="chat-input" id="chatForm">
-        <button class="icon-btn" type="button" data-action="voice-record" title="تسجيل فويس">
-          <i data-lucide="${state.recording ? "square" : "mic"}"></i>
-        </button>
-        <input id="chatText" name="text" autocomplete="off" placeholder="اكتب رسالة..." />
-        <button class="icon-btn" type="submit" title="إرسال">
-          <i data-lucide="send-horizontal"></i>
-        </button>
-        <button class="icon-btn" type="button" data-action="random-love-message" title="رسالة حب">
-          <i data-lucide="heart"></i>
-        </button>
-      </form>
+      
+      <div style="padding: 0 14px; background: var(--chat-input-bg, rgba(10, 0, 15, 0.85));">
+        ${typing}
+        <form class="chat-input" id="chatForm">
+          <div class="chat-input-pill">
+            <div class="chat-input-left-group">
+              <label class="icon-btn-chat" for="chatAttachment" title="مرفقات وملفات">
+                <i data-lucide="paperclip"></i>
+                <input type="file" id="chatAttachment" multiple hidden accept=".pdf,.doc,.docx,.xls,.xlsx,.txt" />
+              </label>
+              
+              <label class="icon-btn-chat" for="chatCamera" title="كاميرا مباشرة">
+                <i data-lucide="camera"></i>
+                <input type="file" id="chatCamera" hidden accept="image/*" capture="environment" />
+              </label>
+              
+              <label class="icon-btn-chat" for="chatGallery" title="معرض الصور والفيديو">
+                <i data-lucide="image"></i>
+                <input type="file" id="chatGallery" multiple hidden accept="image/*,video/*" />
+              </label>
+            </div>
+            
+            <input id="chatText" name="text" autocomplete="off" placeholder="اكتب رسالة..." />
+            
+            <div class="chat-input-right-group">
+              <button class="icon-btn-chat" type="button" data-action="open-stickers" title="ملصقات">
+                <i data-lucide="sticker"></i>
+              </button>
+              
+              <button class="icon-btn-chat" type="button" data-action="voice-record" title="تسجيل صوتي">
+                <i data-lucide="${state.recording ? 'square' : 'mic'}"></i>
+              </button>
+            </div>
+          </div>
+          
+          <button class="chat-send-btn" type="submit" title="إرسال">
+            <i data-lucide="send-horizontal"></i>
+          </button>
+        </form>
+      </div>
     </section>
   `;
 }
@@ -826,36 +1233,133 @@ function renderCapsules() {
 }
 
 function renderMusic() {
-  const playlistOptions = state.playlists.map((item) => `<option value="${item.id}">${escapeHTML(item.name)}</option>`).join("");
+  const query = (sessionStorage.getItem("music-query") || "").trim().toLowerCase();
+
+  if (state.currentPlaylistView) {
+    return renderPlaylistDetail(state.currentPlaylistView, query);
+  }
+
+  const activeMainTab = sessionStorage.getItem("music-main-tab") || "playlists";
+
+  let bodyHtml = "";
+  if (activeMainTab === "playlists") {
+    const filteredPlaylists = state.playlists.filter(p => p.name.toLowerCase().includes(query));
+    bodyHtml = `
+      <div class="playlist-grid">
+        ${filteredPlaylists.length ? filteredPlaylists.map(renderPlaylistCard).join("") : empty("مفيش بلاي ليست بالاسم ده. اعمل واحدة جديدة!")}
+      </div>
+    `;
+  } else {
+    // Favorites tab
+    let favSongs = state.songs.filter(s => s.is_favorite);
+    if (query) {
+      favSongs = favSongs.filter(s => s.title.toLowerCase().includes(query) || (s.artist && s.artist.toLowerCase().includes(query)));
+    }
+    bodyHtml = `
+      <div class="song-grid">
+        ${favSongs.length ? favSongs.map(renderSongCard).join("") : empty("لسه مفيش أغاني في المفضلة. اضغط على القلب الأحمر على أي أغنية!")}
+      </div>
+    `;
+  }
+
   return `
-    <section class="surface">
-      <div class="section-head">
-        <h3>مزيكا الخلفية</h3>
-        <button class="primary-btn" type="button" data-action="open-song-form">
-          <i data-lucide="upload"></i>
-          ارفع أغنية
+    <section class="surface" style="background: transparent; border: none; box-shadow: none; padding: 0;">
+      <div class="section-head" style="margin-bottom: 20px;">
+        <div>
+          <h3 style="font-size: 1.8rem; text-shadow: 0 0 20px rgba(255, 79, 168, 0.4);">ألبوماتنا 🎵</h3>
+          <p class="muted">اختار بلاي ليست عشان تسمع أغانيها.</p>
+        </div>
+        <button class="primary-btn" type="button" data-action="open-playlist-form">
+          <i data-lucide="folder-plus"></i>
+          بلاي ليست جديدة
         </button>
       </div>
-      <form class="form-grid" id="playlistForm">
-        <label><span>اسم بلاي ليست</span><input name="name" placeholder="playlist الحب" required /></label>
-        <button class="secondary-btn" type="submit"><i data-lucide="list-music"></i> إضافة بلاي ليست</button>
-      </form>
-      <div class="tag-row" style="margin-top:12px">
-        <span class="tag hot">Persistent Player</span>
-        <span class="tag">${state.songs.length} أغنية</span>
-        <span class="tag">${state.playlists.length || 1} بلاي ليست</span>
+
+      <div class="music-tab-row">
+        <button class="music-tab-btn ${activeMainTab === "playlists" ? "active" : ""}" type="button" data-action="set-music-main-tab" data-tab="playlists">
+          <i data-lucide="folder" style="display:inline-block; vertical-align:middle; width:16px; margin-left:4px;"></i> قوائم التشغيل
+        </button>
+        <button class="music-tab-btn ${activeMainTab === "favorites" ? "active" : ""}" type="button" data-action="set-music-main-tab" data-tab="favorites">
+          <i data-lucide="heart" style="display:inline-block; vertical-align:middle; width:16px; margin-left:4px;"></i> المفضلة ❤️
+        </button>
       </div>
+
+      <div class="toolbar" style="margin-bottom: 24px;">
+        <input type="search" data-filter="music-query" value="${escapeAttr(query)}" placeholder="بحث في الموسيقى..." style="border-radius: 999px; padding: 14px 24px; background: var(--panel); border: 1px solid var(--border); color: var(--text);" />
+      </div>
+
+      ${bodyHtml}
     </section>
-    <section class="surface">
-      <div class="section-head">
-        <h3>الأغاني</h3>
-        <select data-filter="music-playlist">
-          <option value="">كل الأغاني</option>
-          ${playlistOptions}
-        </select>
+  `;
+}
+
+function renderPlaylistCard(playlist) {
+  const songsInPlaylist = state.songs.filter(s => s.playlist_id === playlist.id);
+  const coverImage = songsInPlaylist.length > 0 && songsInPlaylist[0].cover_url ? songsInPlaylist[0].cover_url : "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=300&q=80";
+
+  return `
+    <div class="playlist-card" data-action="open-playlist" data-id="${playlist.id}">
+      <div class="playlist-cover" style="background-image: url('${escapeAttr(coverImage)}');">
+        <div class="playlist-cover-overlay"></div>
+        <div class="playlist-meta">
+          <h4>${escapeHTML(playlist.name)}</h4>
+          <span>${songsInPlaylist.length} أغنية</span>
+        </div>
       </div>
-      <div class="song-list">
-        ${filteredSongs().length ? filteredSongs().map(renderSong).join("") : empty("ارفعوا أول أغنية رومانسية هنا.")}
+      <div class="actions" style="justify-content: space-between; align-items: center;">
+        <button class="icon-btn ghost-btn" type="button" data-action="edit-playlist" data-id="${playlist.id}" title="تعديل"><i data-lucide="pencil" style="width:18px;"></i></button>
+        <button class="icon-btn danger-btn" type="button" data-action="delete-playlist" data-id="${playlist.id}" title="مسح"><i data-lucide="trash-2" style="width:18px;"></i></button>
+      </div>
+    </div>
+  `;
+}
+
+function renderPlaylistDetail(playlistId, query) {
+  const playlist = state.playlists.find(p => p.id === playlistId);
+  if (!playlist) {
+    state.currentPlaylistView = null;
+    return renderMusic();
+  }
+
+  let songs = state.songs.filter(s => s.playlist_id === playlist.id);
+  const activePlaylistTab = sessionStorage.getItem(`music-playlist-tab-${playlistId}`) || "all";
+
+  if (activePlaylistTab === "favorites") {
+    songs = songs.filter(s => s.is_favorite);
+  }
+
+  if (query) {
+    songs = songs.filter(s => s.title.toLowerCase().includes(query) || (s.artist && s.artist.toLowerCase().includes(query)));
+  }
+
+  return `
+    <section class="surface" style="background: transparent; border: none; box-shadow: none; padding: 0;">
+      <div class="section-head" style="margin-bottom: 24px; display: flex; align-items: center; gap: 16px;">
+        <button class="icon-btn" type="button" data-action="close-playlist" style="width: 48px; height: 48px; border-radius: 50%; flex-shrink:0;"><i data-lucide="arrow-right"></i></button>
+        <div style="flex: 1; overflow:hidden;">
+          <h3 style="font-size: 2rem; margin: 0; text-shadow: 0 0 20px rgba(255, 79, 168, 0.4); white-space: nowrap; text-overflow:ellipsis; overflow:hidden;">${escapeHTML(playlist.name)}</h3>
+          <p class="muted" style="margin: 4px 0 0;">${songs.length} أغنية</p>
+        </div>
+        <button class="primary-btn" type="button" data-action="open-song-form" data-playlist="${playlist.id}">
+          <i data-lucide="plus"></i> إضافة أغنية
+        </button>
+      </div>
+
+      <div class="music-tab-row">
+        <button class="music-tab-btn ${activePlaylistTab === "all" ? "active" : ""}" type="button" data-action="set-playlist-tab" data-playlist-id="${playlist.id}" data-tab="all">
+          كل الأغاني
+        </button>
+        <button class="music-tab-btn ${activePlaylistTab === "favorites" ? "active" : ""}" type="button" data-action="set-playlist-tab" data-playlist-id="${playlist.id}" data-tab="favorites">
+          المفضلة ❤️
+        </button>
+      </div>
+
+      <div class="toolbar" style="margin-bottom: 24px;">
+        <input type="search" data-filter="music-query" value="${escapeAttr(query)}" placeholder="بحث في الأغاني..." style="border-radius: 999px; padding: 14px 24px; background: var(--panel); border: 1px solid var(--border); color: var(--text);" />
+      </div>
+
+      <div class="song-grid">
+        ${songs.length ? songs.map(renderSongCard).join("") : empty("مفيش أغاني هنا لسه.")}
       </div>
     </section>
   `;
@@ -863,7 +1367,7 @@ function renderMusic() {
 
 function renderBucket() {
   return `
-    <section class="surface">
+    <div style="padding-top: 10px;">
       <div class="section-head">
         <h3>ليستة الأحلام</h3>
         <button class="primary-btn" type="button" data-action="open-bucket-form">
@@ -874,37 +1378,10 @@ function renderBucket() {
       <div class="bucket-list">
         ${state.bucket_lists.length ? state.bucket_lists.map(renderBucketItem).join("") : empty("اكتبوا أول حلم عايزين تحققوه سوا.")}
       </div>
-    </section>
+    </div>
   `;
 }
 
-function renderAI() {
-  const starters = [
-    "وريني ذكريات 2025",
-    "مريم رفعت كام ذكرى؟",
-    "إمتى أول خروجة؟",
-    "كام يوم بقالنا مع بعض؟"
-  ];
-
-  return `
-    <section class="surface ai-chat">
-      <div class="section-head">
-        <h3>مساعد علاقتنا</h3>
-        <span class="tag hot">Supabase Search</span>
-      </div>
-      <div class="tag-row">
-        ${starters.map((text) => `<button class="chip-btn" type="button" data-action="ask-ai" data-query="${escapeAttr(text)}">${text}</button>`).join("")}
-      </div>
-      <div class="ai-log" id="aiLog">
-        ${state.aiLog.length ? state.aiLog.map(renderAiBubble).join("") : `<div class="ai-bubble bot">اسألني عن الذكريات، الأماكن، الصور، السنين، أو عداد الحب.</div>`}
-      </div>
-      <form class="ai-input" id="aiForm">
-        <input name="query" placeholder="اكتب سؤالك هنا..." autocomplete="off" required />
-        <button class="primary-btn" type="submit"><i data-lucide="send"></i></button>
-      </form>
-    </section>
-  `;
-}
 
 function renderStats() {
   const stats = computeStats();
@@ -930,7 +1407,7 @@ function renderMemoryCard(memory) {
   const allMedia = mediaForMemory(memory.id);
   const media = allMedia.slice(0, 4);
   const extraCount = allMedia.length > 4 ? allMedia.length - 4 : 0;
-  
+
   const isStar = memory.is_star || state.star_memories.some((item) => item.memory_id === memory.id);
   const classes = `memory-card ${isStar ? "star-card" : ""}`;
   const isMyMemory = memory.user_id === state.user.id;
@@ -938,7 +1415,7 @@ function renderMemoryCard(memory) {
   let actionButtons = `
     <button class="chip-btn" type="button" data-action="share-memory" data-id="${memory.id}"><i data-lucide="send"></i> واتساب</button>
   `;
-  
+
   if (isMyMemory) {
     actionButtons = `
       <button class="chip-btn" type="button" data-action="toggle-memory-star" data-id="${memory.id}">${isStar ? "شيل النجمة" : "⭐ Star Memory"}</button>
@@ -982,30 +1459,30 @@ function renderMemoryMedia(items, memoryId = null, extraCount = 0) {
       </div>
     `;
   }
-  
+
   // لو باعتين ID الذكرى، بنخلي المربع كله قابل للضغط عشان يفتح الألبوم
   const clickAttr = memoryId ? `style="cursor: pointer;" data-action="open-memory-gallery" data-id="${memoryId}" title="اضغط لفتح الألبوم"` : "";
-  
+
   return `
     <div class="memory-media ${items.length === 1 ? "single" : ""}" ${clickAttr}>
       ${items.map((item, index) => {
-        const url = item.signed_url || item.url || item.media_url || "";
-        let content = "";
-        
-        // بنقفل تفاعل الفيديوهات من برا عشان الضغطة تفتح الألبوم مش تشغل الفيديو وهو صغير
-        if (item.type === "video") content = `<video src="${escapeAttr(url)}" muted playsinline style="pointer-events: none;"></video>`;
-        else if (item.type === "voice" || item.type === "audio") content = `<div class="audio-tile" style="pointer-events: none;"><audio src="${escapeAttr(url)}" controls></audio></div>`;
-        else content = `<img src="${escapeAttr(url)}" alt="${escapeAttr(item.title || "ذكرى")}" loading="lazy" />`;
-        
-        // لو دي رابع صورة وفي صور تانية مستخبية، بنحط طبقة شفافة مكتوب عليها الرقم
-        if (index === 3 && extraCount > 0) {
-          return `<div style="position: relative; overflow: hidden; height: 100%;">
+    const url = item.signed_url || item.url || item.media_url || "";
+    let content = "";
+
+    // بنقفل تفاعل الفيديوهات من برا عشان الضغطة تفتح الألبوم مش تشغل الفيديو وهو صغير
+    if (item.type === "video") content = `<video src="${escapeAttr(url)}" muted playsinline style="pointer-events: none;"></video>`;
+    else if (item.type === "voice" || item.type === "audio") content = `<div class="audio-tile" style="pointer-events: none;"><audio src="${escapeAttr(url)}" controls></audio></div>`;
+    else content = `<img src="${escapeAttr(url)}" alt="${escapeAttr(item.title || "ذكرى")}" loading="lazy" />`;
+
+    // لو دي رابع صورة وفي صور تانية مستخبية، بنحط طبقة شفافة مكتوب عليها الرقم
+    if (index === 3 && extraCount > 0) {
+      return `<div style="position: relative; overflow: hidden; height: 100%;">
                     ${content.replace('<img', '<img style="height: 100%; width: 100%;"').replace('<video', '<video style="height: 100%; width: 100%;"')}
                     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.65); display: flex; align-items: center; justify-content: center; font-size: 2.2rem; font-weight: bold; color: #fff;">+${extraCount}</div>
                   </div>`;
-        }
-        return content;
-      }).join("")}
+    }
+    return content;
+  }).join("")}
     </div>
   `;
 }
@@ -1034,21 +1511,55 @@ function renderMessage(message) {
   const reactions = reactionsForMessage(message.id);
   const isMine = message.user_id === state.user.id;
   const ticks = isMine ? `<span class="ticks ${message.is_seen ? "seen" : ""}">${message.is_seen ? "✔✔" : "✔"}</span>` : "";
+
+  const nameColor = localStorage.getItem('chat-name-color') || 'var(--gold)';
+  const fontSize = localStorage.getItem('chat-font-size') || '1rem';
+  const bubbleOpacity = localStorage.getItem('chat-bubble-opacity') || '1';
+
+  // هنا بنفهم نوع الرسالة ونعرضها بالشكل المناسب
+  let contentHtml = "";
+  if (message.type === "voice") {
+    contentHtml = `<audio class="audio-message" src="${escapeAttr(message.voice_url || message.media_url || "")}" controls></audio>`;
+  } else if (message.type === "photo") {
+    contentHtml = `<img src="${escapeAttr(message.media_url || "")}" style="max-width:260px; border-radius:8px; margin-top:5px; border: 2px solid var(--border);" loading="lazy" />`;
+  } else if (message.type === "video") {
+    contentHtml = `<video src="${escapeAttr(message.media_url || "")}" controls style="max-width:260px; border-radius:8px; margin-top:5px; border: 2px solid var(--border);"></video>`;
+  } else if (message.type === "file") {
+    contentHtml = `<a href="${escapeAttr(message.media_url || "")}" target="_blank" style="display:inline-flex; align-items:center; gap:8px; background:rgba(0,0,0,0.3); padding:10px 14px; border-radius:8px; text-decoration:none; color:inherit; margin-top:5px;"><i data-lucide="file-text"></i> تحميل الملف</a>`;
+  } else if (message.type === "sticker") {
+    contentHtml = `<div style="font-size:4.5rem; line-height:1; padding: 10px 0;">${escapeHTML(message.text || "")}</div>`;
+  } else {
+    contentHtml = `<div class="message-text">${escapeHTML(message.text || "")}</div>`;
+  }
+
+  // لو استيكر بنشيل الخلفية بتاعت الرسالة عشان الاستيكر يبقى طاير في الشات
+  const msgStyle = message.type === 'sticker' ? 'background: transparent !important; border: none !important; box-shadow: none !important;' : `font-size: ${fontSize}; opacity: ${bubbleOpacity};`;
+
   return `
     <article class="message-row ${side}" data-id="${message.id}">
-      <div class="message-name">${escapeHTML(displayPerson(message.sender_name))}</div>
-      ${message.type === "voice"
-        ? `<audio class="audio-message" src="${escapeAttr(message.voice_url || "")}" controls></audio>`
-        : `<div class="message-text">${escapeHTML(message.text || "")}</div>`}
-      <div class="reaction-row">
-        ${["❤️", "😂", "😢", "🔥"].map((emoji) => `
-          <button type="button" data-action="react-message" data-id="${message.id}" data-emoji="${emoji}">
-            ${emoji} ${reactions.filter((item) => item.emoji === emoji).length || ""}
-          </button>
-        `).join("")}
+      <div class="msg-content" style="${msgStyle}">
+        <div class="message-name" style="color: ${isMine ? '#ffffff' : nameColor}; font-size: 0.95rem; margin-bottom: 6px; font-weight: 900; text-shadow: ${isMine ? '0 1px 4px rgba(0,0,0,0.3)' : 'none'};">
+          ${sender === "Mariam" ? "حبيبتي" : (sender === "Mahmoud" ? "حبيبي" : escapeHTML(displayPerson(message.sender_name)))}
+        </div>
+        
+        ${contentHtml}
+        
+        <div class="message-meta"><span>${formatMsgTime(message.created_at)}</span>${ticks}</div>
+
+        <div class="reaction-menu" style="align-items: center;">
+          ${["❤️", "😂", "😢", "🔥"].map((emoji) => `
+            <button type="button" data-action="react-message" data-id="${message.id}" data-emoji="${emoji}">${emoji}</button>
+          `).join("")}
+          
+          ${isMine ? `
+            <div style="width: 1px; height: 24px; background: rgba(255,255,255,0.2); margin: 0 6px;"></div>
+            ${message.type === "text" ? `<button type="button" data-action="edit-message" data-id="${message.id}" title="تعديل"><i data-lucide="pencil" style="width:18px;height:18px;color:var(--gold);"></i></button>` : ""}
+            <button type="button" data-action="delete-message" data-id="${message.id}" title="مسح"><i data-lucide="trash-2" style="width:18px;height:18px;color:var(--danger);"></i></button>
+          ` : ""}
+        </div>
+
         ${reactions.length ? `<span class="reaction-pill">${reactionSummary(reactions)}</span>` : ""}
       </div>
-      <div class="message-meta"><span>${formatTime(message.created_at)}</span>${ticks}</div>
     </article>
   `;
 }
@@ -1078,43 +1589,78 @@ function renderCapsule(capsule) {
 }
 
 function renderSong(song) {
-  const playlist = state.playlists.find((item) => item.id === song.playlist_id);
-  
-  // بنشوف لو الأغنية دي بتاعت اليوزر اللي فاتح دلوقتي ولا لأ
   const isMySong = song.user_id === state.user.id;
-  
-  // زرار التشغيل بيظهر للكل عادي
-  let actionButtons = `
-    <button class="icon-btn" type="button" data-action="play-song" data-id="${song.id}" title="تشغيل">
-      <i data-lucide="play"></i>
-    </button>
-  `;
-  
-  // زراير التعديل والمسح بتظهر لصاحب الأغنية بس
-  if (isMySong) {
-    actionButtons += `
-      <button class="icon-btn" type="button" data-action="edit-song" data-id="${song.id}" title="تعديل">
-        <i data-lucide="pencil"></i>
-      </button>
-      <button class="icon-btn" type="button" data-action="delete-song" data-id="${song.id}" title="مسح">
-        <i data-lucide="trash-2"></i>
-      </button>
-    `;
-  }
+  const coverImage = song.cover_url || "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=300&q=80";
 
   return `
-    <article class="song-item">
-      <div class="item-row">
-        <div>
-          <strong>${escapeHTML(song.title)}</strong>
-          <p class="muted">${escapeHTML(song.artist || "محمود ومريم")} · ${escapeHTML(playlist?.name || "playlist الحب")}</p>
-        </div>
-        <div class="actions">
-          ${actionButtons}
+    <article class="song-row" style="display: flex; align-items: center; gap: 16px; padding: 12px 16px; background: var(--panel); backdrop-filter: blur(12px); border-radius: 16px; border: 1px solid var(--border); transition: 0.3s; position: relative; overflow: hidden; flex-wrap: wrap;">
+      <div style="width: 60px; height: 60px; border-radius: 10px; background: url('${escapeAttr(coverImage)}') center/cover; box-shadow: 0 4px 12px rgba(220,150,160,0.3); flex-shrink: 0;"></div>
+      
+      <div style="flex: 1; min-width: 150px;">
+        <strong style="font-size: 1.1rem; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text);">${escapeHTML(song.title)}</strong>
+        <span class="muted" style="font-size: 0.85rem;">${escapeHTML(song.artist || "محمود ومريم")}</span>
+      </div>
+
+      <div class="custom-audio-controls" style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+        <audio id="audio-${song.id}" src="${escapeAttr(song.audio_url || "")}" preload="metadata" ontimeupdate="updateProgress('${song.id}')" onloadedmetadata="updateProgress('${song.id}')" onended="songEnded('${song.id}')"></audio>
+        
+        <span id="time-${song.id}" class="muted" style="font-size: 0.8rem; width: 45px; text-align: right;">0:00</span>
+        
+        <input type="range" id="progress-${song.id}" min="0" max="100" value="0" style="width: 80px; height: 4px; accent-color: var(--pink); cursor: pointer;" oninput="seekAudio('${song.id}', this.value)" />
+        
+        <button class="icon-btn ghost-btn" type="button" onclick="skipAudio('${song.id}', -10)" title="رجوع 10 ثواني" style="width: 32px; height: 32px; min-width: 32px;"><i data-lucide="rotate-ccw" style="width:16px; height:16px;"></i></button>
+        
+        <button class="icon-btn primary-btn play-btn-${song.id}" type="button" onclick="toggleLocalAudio('${song.id}')" title="تشغيل / إيقاف" style="width: 42px; height: 42px; min-width: 42px; border-radius: 50%;">
+          <i data-lucide="play" id="play-icon-${song.id}"></i>
+        </button>
+        
+        <button class="icon-btn ghost-btn" type="button" onclick="skipAudio('${song.id}', 10)" title="تقديم 10 ثواني" style="width: 32px; height: 32px; min-width: 32px;"><i data-lucide="rotate-cw" style="width:16px; height:16px;"></i></button>
+      </div>
+
+      <div class="actions" style="margin-left: auto; padding-right: 12px; border-right: 1px solid rgba(255,255,255,0.1);">
+        <button class="icon-btn ghost-btn" type="button" data-action="set-bg-music" data-id="${song.id}" title="شغلها في خلفية الموقع"><i data-lucide="headphones"></i></button>
+        ${isMySong ? `
+          <button class="icon-btn ghost-btn" type="button" data-action="edit-song" data-id="${song.id}" title="تعديل"><i data-lucide="pencil" style="width:18px;"></i></button>
+          <button class="icon-btn danger-btn" type="button" data-action="delete-song" data-id="${song.id}" title="مسح"><i data-lucide="trash-2" style="width:18px;"></i></button>
+        ` : ""}
+      </div>
+    </article>
+  `;
+}
+
+function renderSongCard(song) {
+  const coverImage = song.cover_url || "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=300&q=80";
+  const isFav = song.is_favorite;
+
+  return `
+    <div class="song-card" data-action="play-song-card" data-id="${song.id}">
+      <div class="song-card-cover-wrapper" style="background-image: url('${escapeAttr(coverImage)}');">
+        <div class="song-card-overlay"></div>
+        
+        <!-- Favorites Heart Button -->
+        <button class="song-card-fav-btn ${isFav ? "is-favorite" : ""}" type="button" data-action="toggle-song-favorite" data-id="${song.id}" title="${isFav ? "شيل من المفضلة" : "إضافة للمفضلة"}">
+          <i data-lucide="heart"></i>
+        </button>
+
+        <!-- Settings Button -->
+        <button class="song-card-settings-btn" type="button" data-action="open-song-settings" data-id="${song.id}" title="إعدادات الأغنية">
+          <i data-lucide="settings"></i>
+        </button>
+
+        <div class="song-card-info">
+          <div class="song-card-title">${escapeHTML(song.title)}</div>
+          <div class="song-card-artist">${escapeHTML(song.artist || "محمود ومريم")}</div>
         </div>
       </div>
-      <audio src="${escapeAttr(song.audio_url || "")}" controls></audio>
-    </article>
+      
+      <div class="song-card-meta">
+        <span class="song-card-uploader">
+          <i data-lucide="user" style="width:12px;height:12px;display:inline-block;vertical-align:middle;margin-left:2px;"></i>
+          ${escapeHTML(displayPerson(state.profiles.find(p => p.id === song.user_id)?.name || "محمود"))}
+        </span>
+        <span>${formatDate(song.created_at)}</span>
+      </div>
+    </div>
   `;
 }
 
@@ -1142,9 +1688,6 @@ function renderBucketItem(item) {
   `;
 }
 
-function renderAiBubble(item) {
-  return `<div class="ai-bubble ${item.role}">${escapeHTML(item.text)}</div>`;
-}
 
 function metric(value, label) {
   return `<div class="metric"><strong>${escapeHTML(String(value))}</strong><span>${escapeHTML(label)}</span></div>`;
@@ -1165,12 +1708,27 @@ async function handleActionClick(event) {
   if (!button) return;
   const { action, id, view, emoji, query } = button.dataset;
   if (action === "record-memory-voice") await toggleMemoryVoiceRecord();
+  if (action === "open-profile-form") openProfileForm();
   if (action === "start-game") startGame(id);
   if (action === "next-game-turn") nextGameTurn();
+
+  if (action === "edit-message") await editChatMessage(id);
+  if (action === "open-chat-settings") openChatSettings();
+  if (action === "delete-message") await deleteChatMessage(id);
+  if (action === "open-stickers") openStickers();
+  if (action === "send-sticker") await sendSticker(button.dataset.sticker);
+  if (action === "open-chat-themes") openChatThemes();
+  if (action === "set-theme") {
+    localStorage.setItem("chat-theme", button.dataset.theme);
+    closeModal();
+    renderView("chat");
+  }
+  if (action === "sign-out") signOut();
   if (action === "end-game") endGame();
   if (action === "search-memory-map") await searchMemoryMap();
   if (action === "switch-view") renderView(view);
   if (action === "close-modal") closeModal();
+  if (action === "close-media-preview") closeMediaPreview();
   if (action === "open-memory-form") openMemoryForm(id);
   if (action === "delete-memory") await deleteMemory(id);
   if (action === "toggle-memory-star") await toggleMemoryStar(id);
@@ -1189,16 +1747,71 @@ async function handleActionClick(event) {
   if (action === "record-capsule-voice") await toggleCapsuleVoiceRecord();
   if (action === "open-capsule") openCapsuleUnlock(id);
   if (action === "delete-capsule") openCapsuleDelete(id);
-  if (action === "open-song-form") openSongForm();
+  if (action === "open-song-form") openSongForm(null, button.dataset.playlist);
   if (action === "edit-song") openSongForm(id);
   if (action === "delete-song") await deleteSong(id);
   if (action === "play-song") playSong(id);
-  if (action === "music-toggle") toggleMusic();
+  if (action === "play-song-card") playSong(id);
+  if (action === "toggle-song-favorite") {
+    if (event) event.stopPropagation();
+    await toggleSongFavorite(id, button);
+  }
+  if (action === "open-song-settings") {
+    if (event) event.stopPropagation();
+    openSongSettingsModal(id);
+  }
+  if (action === "modal-edit-song") {
+    closeModal();
+    openSongForm(id);
+  }
+  if (action === "modal-delete-song") {
+    closeModal();
+    await deleteSong(id);
+  }
+  if (action === "modal-play-bg") {
+    closeModal();
+    playSong(id);
+  }
+  if (action === "set-entertainment-tab") {
+    sessionStorage.setItem("entertainment-tab", button.dataset.tab);
+    renderView("entertainment");
+  }
+  if (action === "set-music-main-tab") {
+    sessionStorage.setItem("music-main-tab", button.dataset.tab);
+    renderView("entertainment");
+  }
+  if (action === "set-playlist-tab") {
+    sessionStorage.setItem(`music-playlist-tab-${button.dataset.playlistId}`, button.dataset.tab);
+    renderView("entertainment");
+  }
+  if (action === "set-bg-music") playSong(id);
+  if (action === "music-toggle") {
+    if (window.isMusicBtnLongPress) {
+      window.isMusicBtnLongPress = false;
+      return;
+    }
+    toggleMusic();
+  }
+  if (action === "music-stop") stopMusic();
   if (action === "music-mute") toggleMute();
+  if (action === "music-shuffle") toggleShuffle();
+  if (action === "music-repeat") toggleRepeat();
+  if (action === "music-menu") {
+    state.currentPlaylistView = null;
+    renderView("entertainment");
+    // Scroll smoothly to top of main area
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  if (action === "music-next") playNextSong();
+  if (action === "music-prev") playPrevSong();
   if (action === "open-bucket-form") openBucketForm(id);
   if (action === "complete-bucket") await completeBucket(id);
-  if (action === "delete-bucket") await deleteRowAndRefresh("bucket_lists", id, "bucket");
-  if (action === "ask-ai") await askAI(query);
+  if (action === "open-playlist") { state.currentPlaylistView = id; renderView("entertainment"); }
+  if (action === "close-playlist") { state.currentPlaylistView = null; renderView("entertainment"); }
+  if (action === "open-playlist-form") openPlaylistForm();
+  if (action === "edit-playlist") openPlaylistForm(id);
+  if (action === "delete-playlist") await deletePlaylist(id);
+  if (action === "delete-bucket") await deleteRowAndRefresh("bucket_lists", id, "entertainment");
   if (action === "refresh-all") await refreshAndRender(state.view);
 }
 
@@ -1208,6 +1821,10 @@ async function handleSubmit(event) {
     event.preventDefault();
     await sendChatMessage(new FormData(form).get("text"));
     form.reset();
+  }
+  if (form.id === "editMessageForm") {
+    event.preventDefault();
+    await submitEditMessage(form);
   }
   if (form.id === "memoryForm") {
     event.preventDefault();
@@ -1241,11 +1858,16 @@ async function handleSubmit(event) {
     event.preventDefault();
     await submitBucket(form);
   }
-  if (form.id === "aiForm") {
+  if (form.id === "chatSettingsForm") {
     event.preventDefault();
-    const input = form.elements.query;
-    await askAI(input.value);
-    input.value = "";
+    localStorage.setItem('chat-bg-size', form.elements.bg_size.value);
+    localStorage.setItem('chat-bg-pos', form.elements.bg_pos.value);
+    localStorage.setItem('chat-theme', form.elements.theme.value);
+    localStorage.setItem('chat-name-color', form.elements.name_color.value);
+    localStorage.setItem('chat-font-size', form.elements.font_size.value);
+    localStorage.setItem('chat-bubble-opacity', form.elements.bubble_opacity.value);
+    closeModal();
+    renderView("chat");
   }
 }
 
@@ -1260,11 +1882,33 @@ function handleInput(event) {
 
 function handleChange(event) {
   const target = event.target;
+
+  // برمجة تغيير خلفية الشات وحفظها في الموبايل
+  if (target.dataset.action === "change-chat-bg") {
+    const file = target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        localStorage.setItem('chat-bg', `url('${e.target.result}')`);
+        renderView("chat"); // ريفريش للشات عشان الصورة تظهر
+      };
+      reader.readAsDataURL(file);
+    }
+    return;
+  }
+
+  if (target.id === "chatAttachment" || target.id === "chatCamera" || target.id === "chatGallery") {
+    const files = [...target.files];
+    if (files.length > 0) openMediaPreview(files[0]);
+    target.value = "";
+    return;
+  }
+
   if (!target.dataset.filter) return;
   sessionStorage.setItem(target.dataset.filter, target.value);
   if (target.dataset.filter.startsWith("memory")) renderView("memories");
   if (target.dataset.filter.startsWith("timeline")) renderView("timeline");
-  if (target.dataset.filter === "music-playlist") renderView("music");
+  if (target.dataset.filter.startsWith("music")) debounceRender("music");
 }
 
 let renderDebounce;
@@ -1385,7 +2029,7 @@ async function submitMemory(form) {
         memory_id: saved.id, user_id: state.user.id, uploader_name: state.profile.name,
         type: "voice", title: vFile.name, url: upload.url, path: upload.path, bucket: upload.bucket, provider: upload.provider, mime_type: vFile.type, size: vFile.size, created_at: new Date().toISOString()
       });
-      window.currentMemoryVoiceBlob = null; 
+      window.currentMemoryVoiceBlob = null;
     }
 
     if (payload.is_star) await ensureStar(saved.id);
@@ -1525,6 +2169,85 @@ async function sendChatMessage(text) {
   });
   sendTypingSignal(false);
   await refreshAndRender("chat");
+}
+
+async function editChatMessage(id) {
+  const msg = state.messages.find((m) => m.id === id);
+  if (!msg) return;
+
+  if (msg.user_id !== state.user.id) {
+    alert("مش هينفع تعدل الرسالة دي عشان مش أنت اللي كاتبها!");
+    return;
+  }
+
+  if (msg.type !== "text") {
+    alert("تقدر تعدل الرسائل النصية بس!");
+    return;
+  }
+
+  openModal("تعديل الرسالة", `
+    <form id="editMessageForm" class="grid" data-id="${msg.id}">
+      <label><span>الرسالة</span>
+        <textarea name="text" required style="width: 100%; min-height: 100px; resize: vertical;">${escapeHTML(msg.text)}</textarea>
+      </label>
+      <div class="split-actions">
+        <button class="secondary-btn" type="button" data-action="close-modal">إلغاء</button>
+        <button class="primary-btn" type="submit"><i data-lucide="save"></i> حفظ التعديل</button>
+      </div>
+    </form>
+  `);
+}
+
+async function submitEditMessage(form) {
+  const id = form.dataset.id;
+  const fd = new FormData(form);
+  const newText = String(fd.get("text")).trim();
+  if (!newText) return;
+
+  setFormBusy(form, true);
+  try {
+    await updateRow("messages", id, { text: newText });
+    closeModal();
+    await refreshAndRender("chat");
+  } catch (error) {
+    alert("حصلت مشكلة في تعديل الرسالة: " + (error.message || error));
+  } finally {
+    setFormBusy(form, false);
+  }
+}
+
+async function deleteChatMessage(id) {
+  const msg = state.messages.find((m) => m.id === id);
+  if (!msg) return;
+
+  if (msg.user_id !== state.user.id) {
+    alert("مش هينفع تمسح الرسالة دي عشان مش أنت اللي كاتبها!");
+    return;
+  }
+
+  if (!confirm("متأكد إنك عايز تمسح الرسالة دي؟")) return;
+
+  try {
+    if (SUPABASE_READY) {
+      if (msg.voice_path) {
+        await sb.storage.from(msg.voice_bucket || CONFIG.MEDIA_BUCKET).remove([msg.voice_path]);
+      }
+      if (msg.media_path) {
+        await sb.storage.from(msg.media_bucket || CONFIG.MEDIA_BUCKET).remove([msg.media_path]);
+      }
+    }
+
+    // Delete reactions associated with this message
+    const reacts = state.reactions.filter((r) => r.message_id === id);
+    for (const r of reacts) {
+      await deleteRow("reactions", r.id);
+    }
+
+    await deleteRow("messages", id);
+    await refreshAndRender("chat");
+  } catch (error) {
+    alert("حصلت مشكلة في مسح الرسالة: " + (error.message || error));
+  }
 }
 
 function fillChatWithLove() {
@@ -1708,7 +2431,7 @@ async function submitCapsule(form) {
       });
     }
 
-    window.currentCapsuleVoiceBlob = null; 
+    window.currentCapsuleVoiceBlob = null;
     closeModal();
     await refreshAndRender("capsules");
   } catch (error) {
@@ -1787,7 +2510,7 @@ async function deleteCapsuleWithPassword(form) {
   await refreshAndRender("capsules");
 }
 
-function openSongForm(id = null) {
+function openSongForm(id = null, defaultPlaylistId = null) {
   const song = state.songs.find((item) => item.id === id);
   openModal(song ? "تعديل الأغنية" : "ارفع أغنية", `
     <form id="songForm" class="grid" data-id="${song?.id || ""}">
@@ -1797,10 +2520,11 @@ function openSongForm(id = null) {
       </div>
       <label><span>البلاي ليست</span>
         <select name="playlist_id">
-          <option value="">playlist الحب</option>
-          ${state.playlists.map((item) => `<option value="${item.id}" ${song?.playlist_id === item.id ? "selected" : ""}>${escapeHTML(item.name)}</option>`).join("")}
+          <option value="">بدون بلاي ليست</option>
+          ${state.playlists.map((item) => `<option value="${item.id}" ${(song?.playlist_id === item.id) || (defaultPlaylistId === item.id && !song) ? "selected" : ""}>${escapeHTML(item.name)}</option>`).join("")}
         </select>
       </label>
+      <label><span>صورة الغلاف (اختياري)</span><input name="coverFile" type="file" accept="image/*" /></label>
       <label><span>ملف الأغنية ${song ? "(سيبه فاضي لو مش عايز تغير الأغنية نفسها)" : ""}</span><input name="file" type="file" accept="audio/*" ${song ? "" : "required"} /></label>
       <div class="split-actions">
         <button class="secondary-btn" type="button" data-action="close-modal">إلغاء</button>
@@ -1815,6 +2539,7 @@ async function submitSong(form) {
     const id = form.dataset.id;
     const fd = new FormData(form);
     const file = form.elements.file.files[0];
+    const coverFile = form.elements.coverFile.files[0];
 
     let payload = {
       title: String(fd.get("title")).trim(),
@@ -1823,6 +2548,11 @@ async function submitSong(form) {
     };
 
     setFormBusy(form, true);
+
+    if (coverFile) {
+      const coverUpload = await uploadAsset(coverFile, "songs/covers", "image", CONFIG.MUSIC_BUCKET);
+      payload.cover_url = coverUpload.url;
+    }
 
     if (file) {
       const upload = await uploadAsset(file, "songs", "audio", CONFIG.MUSIC_BUCKET);
@@ -1846,19 +2576,57 @@ async function submitSong(form) {
   } catch (error) {
     alert("حصلت مشكلة ومش هينفع نعدل: " + (error.message || error));
   } finally {
-    setFormBusy(form, false); // عشان لو حصل ايرور الزراير ترجع تشتغل ومتعلقش
+    setFormBusy(form, false);
   }
 }
 
+function openPlaylistForm(id = null) {
+  const playlist = state.playlists.find(p => p.id === id);
+  openModal(playlist ? "تعديل البلاي ليست" : "إضافة بلاي ليست", `
+    <form id="playlistForm" class="grid" data-id="${playlist?.id || ""}">
+      <label><span>اسم بلاي ليست</span><input name="name" value="${escapeAttr(playlist?.name || "")}" placeholder="playlist الحب" required /></label>
+      <div class="split-actions">
+        <button class="secondary-btn" type="button" data-action="close-modal">إلغاء</button>
+        <button class="primary-btn" type="submit"><i data-lucide="save"></i> حفظ</button>
+      </div>
+    </form>
+  `);
+}
+
 async function submitPlaylist(form) {
+  const id = form.dataset.id;
   const name = new FormData(form).get("name").trim();
   if (!name) return;
-  await insertRow("playlists", {
-    user_id: state.user.id,
-    name,
-    created_at: new Date().toISOString()
-  });
-  form.reset();
+  setFormBusy(form, true);
+  try {
+    if (id) {
+      await updateRow("playlists", id, { name });
+    } else {
+      await insertRow("playlists", {
+        user_id: state.user.id,
+        name,
+        created_at: new Date().toISOString()
+      });
+    }
+    closeModal();
+    await refreshAndRender("music");
+  } catch (e) {
+    alert("حصلت مشكلة: " + e.message);
+  } finally {
+    setFormBusy(form, false);
+  }
+}
+
+async function deletePlaylist(id) {
+  if (!confirm("متأكد إنك عايز تمسح البلاي ليست دي؟ أغانيها مش هتتمسح، بس هتكون بدون بلاي ليست.")) return;
+
+  const songsInPlaylist = state.songs.filter(s => s.playlist_id === id);
+  for (let s of songsInPlaylist) {
+    await updateRow("songs", s.id, { playlist_id: null });
+  }
+
+  await deleteRow("playlists", id);
+  if (state.currentPlaylistView === id) state.currentPlaylistView = null;
   await refreshAndRender("music");
 }
 
@@ -1867,34 +2635,223 @@ function playSong(id) {
   if (!song) return;
   state.currentSong = song.id;
   els.audioPlayer.src = song.audio_url || "";
-  els.audioPlayer.volume = Number(els.volumeSlider.value);
-  els.audioPlayer.play().catch(() => {});
+  els.audioPlayer.volume = els.playerVolumeSlider ? (els.playerVolumeSlider.value / 100) : 1;
+  els.audioPlayer.play().catch(() => { });
+
   updatePlayer(song);
 }
 
+function getCurrentSongList() {
+  let list = state.songs;
+  if (state.currentPlaylistView) {
+    list = state.songs.filter(s => s.playlist_id === state.currentPlaylistView);
+  } else if (sessionStorage.getItem("music-main-tab") === "favorites") {
+    list = state.songs.filter(s => s.is_favorite);
+  }
+
+  const query = (sessionStorage.getItem("music-query") || "").trim().toLowerCase();
+  if (query) {
+    list = list.filter(s => s.title.toLowerCase().includes(query) || (s.artist && s.artist.toLowerCase().includes(query)));
+  }
+  return list;
+}
+
 function playNextSong() {
-  if (!state.songs.length) return;
-  const index = state.songs.findIndex((item) => item.id === state.currentSong);
-  const next = state.songs[(index + 1) % state.songs.length];
+  const list = getCurrentSongList();
+  if (!list.length) return;
+
+  if (state.musicShuffle) {
+    const randIndex = Math.floor(Math.random() * list.length);
+    playSong(list[randIndex].id);
+    return;
+  }
+
+  let index = list.findIndex((item) => item.id === state.currentSong);
+  const next = list[(index + 1) % list.length];
   playSong(next.id);
 }
 
+function playPrevSong() {
+  const list = getCurrentSongList();
+  if (!list.length) return;
+
+  if (state.musicShuffle) {
+    const randIndex = Math.floor(Math.random() * list.length);
+    playSong(list[randIndex].id);
+    return;
+  }
+
+  let index = list.findIndex((item) => item.id === state.currentSong);
+  if (index === -1) index = 1;
+  const prev = list[(index - 1 + list.length) % list.length];
+  playSong(prev.id);
+}
+
 function toggleMusic() {
-  if (!els.audioPlayer.src && state.songs[0]) playSong(state.songs[0].id);
-  else if (els.audioPlayer.paused) els.audioPlayer.play().catch(() => {});
-  else els.audioPlayer.pause();
+  if (!els.audioPlayer.src) {
+    const list = getCurrentSongList();
+    if (list.length > 0) playSong(list[0].id);
+  } else if (els.audioPlayer.paused) {
+    els.audioPlayer.play().catch(() => { });
+  } else {
+    els.audioPlayer.pause();
+  }
+
   const song = state.songs.find((item) => item.id === state.currentSong);
   if (song) updatePlayer(song);
 }
 
 function toggleMute() {
   els.audioPlayer.muted = !els.audioPlayer.muted;
+  updateVolumeIcon();
+}
+
+function toggleShuffle() {
+  state.musicShuffle = !state.musicShuffle;
+  const btn = document.getElementById("playerShuffleBtn");
+  if (btn) btn.classList.toggle("active", state.musicShuffle);
+}
+
+function toggleRepeat() {
+  state.musicRepeat = !state.musicRepeat;
+  const btn = document.getElementById("playerRepeatBtn");
+  if (btn) btn.classList.toggle("active", state.musicRepeat);
+}
+
+function updateVolumeIcon() {
+  const icon = document.getElementById("activeVolumeIcon");
+  if (!icon) return;
+  const vol = els.audioPlayer.volume;
+  if (els.audioPlayer.muted || vol === 0) {
+    icon.setAttribute("data-lucide", "volume-x");
+  } else if (vol < 0.5) {
+    icon.setAttribute("data-lucide", "volume-1");
+  } else {
+    icon.setAttribute("data-lucide", "volume-2");
+  }
+  iconRefresh();
+}
+
+function formatAudioTime(seconds) {
+  if (isNaN(seconds) || !isFinite(seconds)) return "0:00";
+  const m = Math.floor(seconds / 60);
+  const s = Math.floor(seconds % 60);
+  return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
+
+async function toggleSongFavorite(id, buttonEl) {
+  const song = state.songs.find(s => s.id === id);
+  if (!song) return;
+  const val = !song.is_favorite;
+
+  if (buttonEl) {
+    buttonEl.classList.toggle("is-favorite", val);
+    song.is_favorite = val;
+  }
+
+  try {
+    await updateRow("songs", id, { is_favorite: val });
+    await refreshAndRender("music");
+  } catch (err) {
+    if (buttonEl) {
+      buttonEl.classList.toggle("is-favorite", !val);
+      song.is_favorite = !val;
+    }
+    alert("حصلت مشكلة في تحديث المفضلة: " + err.message);
+  }
+}
+
+function openSongSettingsModal(id) {
+  const song = state.songs.find(s => s.id === id);
+  if (!song) return;
+
+  const isMySong = song.user_id === state.user.id;
+
+  let actionsHtml = `
+    <div style="display:flex; flex-direction:column; gap:12px; width:100%; margin-top:10px;">
+      <button class="primary-btn" type="button" data-action="modal-play-bg" data-id="${song.id}" style="width:100%; justify-content:center; padding:12px; background:linear-gradient(135deg, var(--gold), var(--pink)); border-color:transparent; color:#0b0f19; font-weight:bold;">
+        <i data-lucide="headphones"></i> تشغيل في الخلفية
+      </button>
+      ${isMySong ? `
+        <button class="primary-btn" type="button" data-action="modal-edit-song" data-id="${song.id}" style="width:100%; justify-content:center; padding:12px;">
+          <i data-lucide="pencil"></i> تعديل تفاصيل الأغنية
+        </button>
+        <button class="danger-btn" type="button" data-action="modal-delete-song" data-id="${song.id}" style="width:100%; justify-content:center; padding:12px;">
+          <i data-lucide="trash-2"></i> مسح الأغنية نهائياً
+        </button>
+      ` : ""}
+    </div>
+  `;
+
+  openModal("إعدادات الأغنية ⚙️", `
+    <div style="display:flex; flex-direction:column; align-items:center; gap:16px; padding:10px 0;">
+      <div style="width:120px; height:120px; border-radius:12px; background:url('${escapeAttr(song.cover_url || "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=150&q=80")}') center/cover; box-shadow:0 8px 24px rgba(0,0,0,0.3);"></div>
+      <div style="text-align:center;">
+        <h4 style="margin:0; font-size:1.2rem; color:var(--text);">${escapeHTML(song.title)}</h4>
+        <p class="muted" style="margin:4px 0 0; font-size:0.9rem;">${escapeHTML(song.artist || "محمود ومريم")}</p>
+      </div>
+      
+      ${actionsHtml}
+      
+      <button class="secondary-btn" type="button" data-action="close-modal" style="width:100%; justify-content:center; margin-top:10px; padding:12px;">إغلاق</button>
+    </div>
+  `);
 }
 
 function updatePlayer(song) {
-  els.playerTrack.textContent = song?.title || "مفيش أغنية شغالة";
-  els.playerArtist.textContent = song?.artist || "playlist الحب";
+  if (els.playerTrack) els.playerTrack.textContent = song?.title || "مفيش أغنية شغالة";
+  if (els.playerArtist) els.playerArtist.textContent = song?.artist || "محمود ومريم";
+
+  const coverEl = document.getElementById("activePlayerCover");
+  if (coverEl) {
+    coverEl.src = song?.cover_url || "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=80&q=80";
+  }
+
+  const playIcon = document.getElementById('activePlayIcon');
+  if (playIcon) playIcon.setAttribute('data-lucide', els.audioPlayer.paused ? 'play' : 'pause');
+
+  const bar = document.getElementById("activePlayerBar");
+  if (bar) {
+    bar.classList.toggle("playing", !els.audioPlayer.paused);
+  }
+
+  updatePlayerVisibility();
   iconRefresh();
+}
+
+function updatePlayerVisibility() {
+  const bar = document.getElementById("activePlayerBar");
+  const wrapper = document.getElementById("floatingMusicWrapper");
+  const hasSong = !!state.currentSong;
+  const activeEntertainmentTab = sessionStorage.getItem("entertainment-tab") || "games";
+  const isMusicView = state.view === "entertainment" && activeEntertainmentTab === "music";
+
+  if (bar) {
+    if (hasSong && isMusicView) {
+      bar.style.display = "flex";
+      setTimeout(() => bar.classList.add("active"), 10);
+    } else {
+      bar.classList.remove("active");
+      setTimeout(() => { if (!bar.classList.contains("active")) bar.style.display = "none"; }, 400);
+    }
+  }
+
+  if (wrapper) {
+    if (hasSong && !isMusicView) {
+      wrapper.classList.remove("hidden");
+    } else {
+      wrapper.classList.add("hidden");
+    }
+  }
+}
+
+function stopMusic() {
+  if (els.audioPlayer) {
+    els.audioPlayer.pause();
+    els.audioPlayer.currentTime = 0;
+  }
+  state.currentSong = null;
+  updatePlayer(null);
 }
 
 function openBucketForm(id) {
@@ -1940,78 +2897,7 @@ async function completeBucket(id) {
   await refreshAndRender("bucket");
 }
 
-async function askAI(query) {
-  const clean = String(query || "").trim();
-  if (!clean) return;
-  state.aiLog.push({ role: "user", text: clean });
-  renderView("ai");
-  const answer = await answerRelationshipQuestion(clean);
-  state.aiLog.push({ role: "bot", text: answer });
-  renderView("ai");
-  requestAnimationFrame(() => {
-    const log = $("#aiLog");
-    if (log) log.scrollTop = log.scrollHeight;
-  });
-}
 
-async function answerRelationshipQuestion(query) {
-  const q = normalizeArabic(query);
-  const yearMatch = q.match(/20\d{2}/);
-  if (q.includes("كام يوم") || q.includes("بقالنا")) {
-    return `بقالكوا مع بعض ${relationCounter().days} يوم من 21-07-2023، ولسه الشريط مكمل ❤️`;
-  }
-  if (yearMatch && q.includes("ذكريات")) {
-    const year = yearMatch[0];
-    const found = state.memories.filter((item) => new Date(item.date).getFullYear() === Number(year));
-    return found.length
-      ? `لقيت ${found.length} ذكرى في ${year}: ${found.slice(0, 6).map((item) => item.title).join("، ")}.`
-      : `ملقتش ذكريات محفوظة في ${year} لسه.`;
-  }
-  if (q.includes("مريم") && (q.includes("رفعت") || q.includes("كام"))) {
-    const count = state.memories.filter((item) => normalizePerson(item.uploader_name) === "Mariam").length;
-    return `مريم رفعت ${count} ذكرى لحد دلوقتي.`;
-  }
-  if (q.includes("محمود") && (q.includes("رفع") || q.includes("كام"))) {
-    const count = state.memories.filter((item) => normalizePerson(item.uploader_name) === "Mahmoud").length;
-    return `محمود رفع ${count} ذكرى لحد دلوقتي.`;
-  }
-  if (q.includes("اول خروجه") || q.includes("اول خروجة")) {
-    const first = [...state.memories].sort((a, b) => new Date(a.date) - new Date(b.date))[0];
-    return first ? `أول خروجة محفوظة هي "${first.title}" يوم ${formatDate(first.date)}${first.location_text ? ` في ${first.location_text}` : ""}.` : "لسه مفيش أول خروجة محفوظة.";
-  }
-  if (q.includes("اول صوره") || q.includes("اول صورة")) {
-    const firstPhoto = state.media
-      .filter((item) => item.type === "photo")
-      .sort((a, b) => new Date(a.created_at) - new Date(b.created_at))[0];
-    const memory = firstPhoto ? state.memories.find((item) => item.id === firstPhoto.memory_id) : null;
-    return firstPhoto ? `أول صورة محفوظة مرتبطة بذكرى "${memory?.title || "من غير عنوان"}".` : "لسه مفيش صور محفوظة.";
-  }
-  if (q.includes("اكتر سنه") || q.includes("اكثر سنة") || q.includes("أكثر سنة")) {
-    const grouped = groupBy(state.memories, (item) => new Date(item.date).getFullYear());
-    const top = Object.entries(grouped).sort((a, b) => b[1].length - a[1].length)[0];
-    return top ? `أكثر سنة فيها ذكريات هي ${top[0]} بعدد ${top[1].length} ذكرى.` : "لسه مفيش ذكريات كفاية للإحصائية دي.";
-  }
-  if (q.includes("الساحل") || q.includes("مكان") || q.includes("فين")) {
-    const term = q.includes("الساحل") ? "الساحل" : clean;
-    const found = searchMemories(term);
-    return found.length ? `لقيت ${found.length} نتيجة: ${found.slice(0, 6).map((item) => item.title).join("، ")}.` : "ملقتش ذكريات بالمكان أو الوصف ده.";
-  }
-  if (q.includes("صور") && q.includes("محمود")) {
-    const found = state.memories.filter((item) => normalizeArabic(`${item.title} ${item.description}`).includes("محمود"));
-    return found.length
-      ? `لقيت ${found.length} ذكرى غالبا فيها محمود حسب العنوان والوصف: ${found.slice(0, 6).map((item) => item.title).join("، ")}.`
-      : "مش لاقي تاج أو وصف بيقول إن الصور فيها محمود. ضيفوا اسم محمود في وصف الذكرى علشان البحث يبقى أذكى.";
-  }
-
-  if (SUPABASE_READY) {
-    const { data } = await sb.rpc("match_memories", { query_text: clean, match_count: 5 });
-    if (data?.length) return `أقرب ذكريات لسؤالك: ${data.map((item) => item.title).join("، ")}.`;
-  }
-  const local = searchMemories(clean);
-  return local.length
-    ? `أقرب حاجة لقيتها: ${local.slice(0, 5).map((item) => item.title).join("، ")}.`
-    : "اسألني بطريقة تانية أو ضيفوا تفاصيل أكتر في الذكريات علشان أجاوب أحلى.";
-}
 
 async function insertRow(table, payload) {
   if (SUPABASE_READY) {
@@ -2135,6 +3021,15 @@ async function setupRealtime() {
     .on("broadcast", { event: "game-sync" }, ({ payload }) => {
       state.activeGame = payload;
       if (state.view === "games") renderView("games");
+    })
+    .on("broadcast", { event: "profile-sync" }, ({ payload }) => {
+      const idx = state.profiles.findIndex(p => p.id === payload.id);
+      if (idx !== -1) {
+        state.profiles[idx] = { ...state.profiles[idx], ...payload };
+        if (state.view === "chat" || state.view === "home") {
+          renderView(state.view);
+        }
+      }
     })
     .subscribe(async (status) => {
       if (status === "SUBSCRIBED") {
@@ -2673,11 +3568,11 @@ async function deleteSong(id) {
 
   try {
     const song = state.songs.find(s => s.id === id);
-    
+
     // تأكيد إضافي: لو الأغنية مش بتاعته نوقفه ونطلعله رسالة
     if (song && song.user_id !== state.user.id) {
-       alert("مش هينفع تمسح الأغنية دي عشان مش إنت اللي رافعها!");
-       return;
+      alert("مش هينفع تمسح الأغنية دي عشان مش إنت اللي رافعها!");
+      return;
     }
 
     if (song && song.audio_path && SUPABASE_READY) {
@@ -2690,7 +3585,7 @@ async function deleteSong(id) {
   }
 }
 function checkCelebrations() {
-  if (sessionStorage.getItem("celebrated_today")) return; 
+  if (sessionStorage.getItem("celebrated_today")) return;
   const now = new Date();
   const m = now.getMonth() + 1;
   const d = now.getDate();
@@ -2701,9 +3596,9 @@ function checkCelebrations() {
   if (m === 7 && d === 4) messages.push("🎂 كل سنة وأنت طيب يا محمود، ربنا يخليكم لبعض ❤️");
 
   if (messages.length > 0) {
-     sessionStorage.setItem("celebrated_today", "true");
-     fireConfetti();
-     openModal("يوم مميز جداً! 🥳", `<div class="love-message" style="text-align:center; font-size:1.3rem;"><strong>${messages.join('<br><br>')}</strong></div>`);
+    sessionStorage.setItem("celebrated_today", "true");
+    fireConfetti();
+    openModal("يوم مميز جداً! 🥳", `<div class="love-message" style="text-align:center; font-size:1.3rem;"><strong>${messages.join('<br><br>')}</strong></div>`);
   }
 }
 
@@ -2727,7 +3622,7 @@ function fireConfetti() {
 
     confetti.animate([
       { transform: `translate3d(0, 0, 0) rotate(0deg)`, opacity: 1 },
-      { transform: `translate3d(${Math.random()*200 - 100}px, 100vh, 0) rotate(${Math.random()*720}deg)`, opacity: 0 }
+      { transform: `translate3d(${Math.random() * 200 - 100}px, 100vh, 0) rotate(${Math.random() * 720}deg)`, opacity: 0 }
     ], {
       duration: fallDuration * 1000,
       easing: 'cubic-bezier(.37,0,.63,1)',
@@ -2746,8 +3641,8 @@ async function initMemoryMapPicker(lat, lng) {
     });
   }
   const mapDiv = document.getElementById('memoryMapPicker');
-  if(!mapDiv) return;
-  const defaultLat = lat || 30.0444; 
+  if (!mapDiv) return;
+  const defaultLat = lat || 30.0444;
   const defaultLng = lng || 31.2357;
 
   window.memoryMap = L.map('memoryMapPicker').setView([defaultLat, defaultLng], 13);
@@ -2760,7 +3655,7 @@ async function initMemoryMapPicker(lat, lng) {
     document.getElementById('memoryLng').value = position.lng;
   });
 
-  window.memoryMap.on('click', function(e) {
+  window.memoryMap.on('click', function (e) {
     window.memoryMarker.setLatLng(e.latlng);
     document.getElementById('memoryLat').value = e.latlng.lat;
     document.getElementById('memoryLng').value = e.latlng.lng;
@@ -2781,7 +3676,7 @@ async function searchMemoryMap() {
       window.memoryMarker.setLatLng([lat, lng]);
       document.getElementById('memoryLat').value = lat;
       document.getElementById('memoryLng').value = lng;
-      if(!document.getElementById('memoryLocText').value) document.getElementById('memoryLocText').value = data[0].display_name.split(',')[0];
+      if (!document.getElementById('memoryLocText').value) document.getElementById('memoryLocText').value = data[0].display_name.split(',')[0];
     } else alert("مفيش مكان بالاسم ده ع الخريطة!");
   } catch (err) { alert("حصلت مشكلة في البحث."); }
 }
@@ -2808,7 +3703,7 @@ async function toggleMemoryVoiceRecord() {
     window.memoryMediaRecorder.onstop = () => {
       stream.getTracks().forEach(t => t.stop());
       const blob = new Blob(chunks, { type: 'audio/webm' });
-      window.currentMemoryVoiceBlob = blob; 
+      window.currentMemoryVoiceBlob = blob;
       preview.src = URL.createObjectURL(blob);
       preview.style.display = "block";
     };
@@ -2887,11 +3782,21 @@ function openMemoryGallery(id) {
   `);
 }
 // ====== برمجة الألعاب ======
+function getGamePool(gameId) {
+  if (gameId === "meen") return MEEN_QUESTIONS;
+  if (gameId === "gawebny") return GAWEBNY_QUESTIONS;
+  if (gameId === "law") return LAW_KHYAROUK_QUESTIONS;
+  if (gameId === "truth_dare") return TRUTH_OR_DARE_QUESTIONS;
+  if (gameId === "never_ever") return NEVER_HAVE_I_EVER_QUESTIONS;
+  if (gameId === "roleplay") return ROLEPLAY_QUESTIONS;
+  return MEEN_QUESTIONS;
+}
+
 function startGame(gameId) {
   const other = state.profiles.find(p => p.id !== state.user.id) || state.user;
-  const pool = gameId === "meen" ? MEEN_QUESTIONS : (gameId === "gawebny" ? GAWEBNY_QUESTIONS : LAW_KHYAROUK_QUESTIONS);
-  const question = pool[Math.floor(Math.random() * pool.length)];
 
+  const pool = getGamePool(gameId);
+  const question = pool[Math.floor(Math.random() * pool.length)];
   state.activeGame = {
     id: gameId,
     question: question,
@@ -2905,10 +3810,11 @@ function startGame(gameId) {
   renderView("games");
 }
 
+
 function nextGameTurn() {
   if (!state.activeGame) return;
   const gameId = state.activeGame.id;
-  const pool = gameId === "meen" ? MEEN_QUESTIONS : GAWEBNY_QUESTIONS;
+  const pool = getGamePool(gameId);
   const question = pool[Math.floor(Math.random() * pool.length)];
 
   // التبديل: اللي كان بيسأل يجاوب والعكس
@@ -2945,3 +3851,633 @@ function broadcastGameState() {
     });
   }
 }
+// ====== برمجة الضغطة المطولة للريأكت (زي الواتس) ======
+let pressTimer;
+const startPress = (e) => {
+  const row = e.target.closest('.message-row');
+  // لو دسنا على زرار التعديل أو المسح مش عايزين القايمة تفتح
+  if (!row || e.target.closest('button')) return;
+
+  pressTimer = setTimeout(() => {
+    // نقفل أي قايمة مفتوحة الأول
+    document.querySelectorAll('.message-row.show-reactions').forEach(el => el.classList.remove('show-reactions'));
+    // نفتح القايمة بتاعت الرسالة دي
+    row.classList.add('show-reactions');
+    // هزة خفيفة للموبايل عشان تحس إنها فتحت
+    if (navigator.vibrate) navigator.vibrate(40);
+  }, 400); // 400 ملي ثانية (وقت الضغطة)
+};
+
+const cancelPress = () => clearTimeout(pressTimer);
+
+// لو عملنا كليك في أي مكان فاضي، نقفل قايمة الإيموجي
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.reaction-menu')) {
+    document.querySelectorAll('.message-row.show-reactions').forEach(el => el.classList.remove('show-reactions'));
+  }
+});
+
+els.appShell.addEventListener('touchstart', startPress, { passive: true });
+els.appShell.addEventListener('mousedown', startPress);
+els.appShell.addEventListener('touchend', cancelPress);
+els.appShell.addEventListener('mouseup', cancelPress);
+els.appShell.addEventListener('touchmove', cancelPress);
+// ====== إعدادات أبعاد خلفية الشات ======
+function openChatSettings() {
+  const currentSize = localStorage.getItem('chat-bg-size') || 'cover';
+  const currentPos = localStorage.getItem('chat-bg-pos') || 'center';
+  const currentTheme = localStorage.getItem('chat-theme') || 'default';
+  const nameColor = localStorage.getItem('chat-name-color') || 'var(--gold)';
+  const fontSize = localStorage.getItem('chat-font-size') || '1rem';
+  const bubbleOpacity = localStorage.getItem('chat-bubble-opacity') || '1';
+
+  openModal("تعديل الشات ⚙️", `
+    <form id="chatSettingsForm" class="grid" style="max-height: 70vh; overflow-y: auto; padding-right: 5px;">
+      <h4 style="margin: 0; color: var(--pink);">الخلفية والمظهر</h4>
+      
+      <label><span>تغيير صورة الخلفية</span>
+        <input type="file" accept="image/*" data-action="change-chat-bg" class="file-input" style="padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;" />
+      </label>
+      
+      <label><span>حجم الصورة</span>
+        <select name="bg_size">
+          <option value="cover" ${currentSize === 'cover' ? 'selected' : ''}>تغطية الشاشة (Cover)</option>
+          <option value="contain" ${currentSize === 'contain' ? 'selected' : ''}>احتواء كامل (Contain)</option>
+          <option value="100% 100%" ${currentSize === '100% 100%' ? 'selected' : ''}>مط (Stretch)</option>
+        </select>
+      </label>
+      
+      <label><span>موضع الصورة</span>
+        <select name="bg_pos">
+          <option value="center" ${currentPos === 'center' ? 'selected' : ''}>في النص (Center)</option>
+          <option value="top" ${currentPos === 'top' ? 'selected' : ''}>فوق (Top)</option>
+          <option value="bottom" ${currentPos === 'bottom' ? 'selected' : ''}>تحت (Bottom)</option>
+        </select>
+      </label>
+      
+      <h4 style="margin: 15px 0 0; color: var(--pink);">تخصيص الرسايل</h4>
+      
+      <label><span>لون الشات (الثيم)</span>
+        <select name="theme">
+          <option value="default" ${currentTheme === 'default' ? 'selected' : ''}>موف رومانسي (الافتراضي)</option>
+          <option value="pink" ${currentTheme === 'pink' ? 'selected' : ''}>بينك 🌸</option>
+          <option value="blue" ${currentTheme === 'blue' ? 'selected' : ''}>أزرق سماوي 🌊</option>
+          <option value="dark" ${currentTheme === 'dark' ? 'selected' : ''}>ليلي هادي 🌙</option>
+        </select>
+      </label>
+      
+      <label><span>لون الاسم في الشات</span>
+        <select name="name_color">
+          <option value="var(--gold)" ${nameColor === 'var(--gold)' ? 'selected' : ''}>دهبي (الافتراضي)</option>
+          <option value="#ffffff" ${nameColor === '#ffffff' ? 'selected' : ''}>أبيض</option>
+          <option value="var(--pink)" ${nameColor === 'var(--pink)' ? 'selected' : ''}>بينك</option>
+          <option value="var(--blue)" ${nameColor === 'var(--blue)' ? 'selected' : ''}>أزرق</option>
+          <option value="var(--green)" ${nameColor === 'var(--green)' ? 'selected' : ''}>أخضر</option>
+        </select>
+      </label>
+
+      <label><span>حجم خط الرسايل</span>
+        <select name="font_size">
+          <option value="0.9rem" ${fontSize === '0.9rem' ? 'selected' : ''}>صغير</option>
+          <option value="1rem" ${fontSize === '1rem' ? 'selected' : ''}>متوسط (الافتراضي)</option>
+          <option value="1.15rem" ${fontSize === '1.15rem' ? 'selected' : ''}>كبير</option>
+          <option value="1.3rem" ${fontSize === '1.3rem' ? 'selected' : ''}>كبير جداً</option>
+        </select>
+      </label>
+      
+      <label><span>شفافية فقاعات الشات</span>
+        <select name="bubble_opacity">
+          <option value="1" ${bubbleOpacity === '1' ? 'selected' : ''}>عادي (معتم)</option>
+          <option value="0.85" ${bubbleOpacity === '0.85' ? 'selected' : ''}>شفاف شوية</option>
+          <option value="0.6" ${bubbleOpacity === '0.6' ? 'selected' : ''}>شفاف جداً</option>
+        </select>
+      </label>
+
+      <div class="split-actions" style="margin-top: 15px;">
+        <button class="secondary-btn" type="button" data-action="close-modal">إلغاء</button>
+        <button class="primary-btn" type="submit"><i data-lucide="save"></i> حفظ التعديلات</button>
+      </div>
+    </form>
+  `);
+}
+// ====== برمجة رفع الملفات في الشات ======
+async function uploadChatMedia(files) {
+  const form = document.getElementById("chatForm");
+  if (form) setFormBusy(form, true);
+  try {
+    for (const file of files) {
+      let type = fileType(file);
+      // لو ملف عادي زي PDF أو DOC
+      if (file.type.includes('pdf') || file.type.includes('doc')) type = 'file';
+
+      const upload = await uploadAsset(file, "chat-media", type);
+      await insertRow("messages", {
+        text: "",
+        type: type, // (photo, video, file)
+        media_url: upload.url,
+        media_path: upload.path,
+        media_bucket: upload.bucket,
+        user_id: state.user.id,
+        sender_name: state.profile.name,
+        is_seen: false,
+        created_at: new Date().toISOString()
+      });
+    }
+    await refreshAndRender("chat");
+    scrollChatToBottom();
+  } catch (error) {
+    alert("حصلت مشكلة في الرفع: " + (error.message || error));
+  } finally {
+    if (form) setFormBusy(form, false);
+  }
+}
+
+// ====== برمجة الاستيكرات والثيمات ======
+function openStickers() {
+  const stickers = [
+    "🥰", "😍", "😘", "😂", "🥺", "😭", "😡", "👻", "❤️", "🔥", "🎉", "✨", "🌹", "💍", "🫶", "💅", "👀", "💋", "🫂", "🐣",
+    "🙈", "🙉", "🙊", "🐒", "🐶", "🐱", "🎈", "🧸", "🎀", "💎", "💔", "💕", "💞", "💓", "💖", "💘", "💝", "🍓", "🍒", "🍫",
+    "🍬", "🍭", "🍷", "🥂", "🌍", "🪐", "🌙", "⭐", "🌟", "🌞", "☔", "⛄", "🎁", "🎶", "🎵", "💯", "🥳", "😎", "🤓", "😴",
+    "🤤", "🤫", "🤭", "🤗", "🤔", "🤨", "😐", "😑", "😶", "🙄", "😏", "😣", "😥", "😮", "🤐", "😯", "😪", "😫", "🥱"
+  ];
+  openModal("اختار استيكر 🤩", `
+    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; text-align: center; padding: 10px; max-height: 50vh; overflow-y: auto;">
+      ${stickers.map(s => `<button type="button" data-action="send-sticker" data-sticker="${s}" style="font-size: 2.2rem; background: none; border: none; cursor: pointer; transition: 0.2s; padding: 5px;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">${s}</button>`).join("")}
+    </div>
+  `);
+}
+
+async function sendSticker(sticker) {
+  closeModal();
+  await insertRow("messages", {
+    text: sticker,
+    type: "sticker",
+    user_id: state.user.id,
+    sender_name: state.profile.name,
+    is_seen: false,
+    created_at: new Date().toISOString()
+  });
+  await refreshAndRender("chat");
+  scrollChatToBottom();
+}
+
+function openChatThemes() {
+  openModal("ألوان الشات 🎨", `
+    <div class="grid two">
+      <button class="primary-btn" type="button" data-action="set-theme" data-theme="default" style="background: linear-gradient(135deg, #ff4fa8, #8b4dff);">الافتراضي (موف ورومانسي)</button>
+      <button class="primary-btn" type="button" data-action="set-theme" data-theme="pink" style="background: #ff4fa8; border-color: #ff4fa8;">بينك في بينك 🌸</button>
+      <button class="primary-btn" type="button" data-action="set-theme" data-theme="blue" style="background: #4f7dff; border-color: #4f7dff;">أزرق سماوي 🌊</button>
+      <button class="primary-btn" type="button" data-action="set-theme" data-theme="dark" style="background: #1a1a1a; border-color: #333;">ليلي هادي 🌙</button>
+    </div>
+  `);
+}
+
+let currentCropper = null;
+let currentPreviewFile = null;
+
+function openMediaPreview(file) {
+  currentPreviewFile = file;
+  const modal = $("#mediaPreviewModal");
+  const body = $("#mediaPreviewBody");
+  const title = $("#mediaPreviewTitle");
+
+  body.innerHTML = '';
+  if (currentCropper) {
+    currentCropper.destroy();
+    currentCropper = null;
+  }
+
+  const url = URL.createObjectURL(file);
+  const type = file.type.split('/')[0];
+
+  if (type === 'image') {
+    title.textContent = "قص الصورة";
+    const img = document.createElement('img');
+    img.src = url;
+    img.style.maxWidth = '100%';
+    img.style.maxHeight = '60vh';
+    img.style.display = 'block';
+    body.appendChild(img);
+
+    setTimeout(() => {
+      currentCropper = new window.Cropper(img, {
+        viewMode: 1,
+        dragMode: 'move',
+        autoCropArea: 1,
+        restore: false,
+        guides: true,
+        center: true,
+        highlight: false,
+        cropBoxMovable: true,
+        cropBoxResizable: true,
+        toggleDragModeOnDblclick: false,
+      });
+    }, 100);
+  } else if (type === 'video') {
+    title.textContent = "معاينة الفيديو";
+    const vid = document.createElement('video');
+    vid.src = url;
+    vid.controls = true;
+    vid.style.maxWidth = '100%';
+    vid.style.maxHeight = '60vh';
+    body.appendChild(vid);
+  } else {
+    title.textContent = "إرسال ملف";
+    body.innerHTML = `<div style="padding: 20px; color: white;">سيتم إرسال الملف: ${escapeHTML(file.name)}</div>`;
+  }
+
+  modal.showModal();
+}
+
+function closeMediaPreview() {
+  const modal = $("#mediaPreviewModal");
+  modal.close();
+  if (currentCropper) {
+    currentCropper.destroy();
+    currentCropper = null;
+  }
+  currentPreviewFile = null;
+  $("#mediaPreviewBody").innerHTML = '';
+}
+
+async function confirmMediaUpload() {
+  if (!currentPreviewFile) return;
+
+  const type = currentPreviewFile.type.split('/')[0];
+  let filesToUpload = [];
+
+  const confirmBtn = $("#confirmMediaBtn");
+  if (confirmBtn) confirmBtn.disabled = true;
+
+  try {
+    if (type === 'image' && currentCropper) {
+      currentCropper.getCroppedCanvas().toBlob(async (blob) => {
+        const croppedFile = new File([blob], currentPreviewFile.name, { type: currentPreviewFile.type });
+        closeMediaPreview();
+        await uploadChatMedia([croppedFile]);
+        if (confirmBtn) confirmBtn.disabled = false;
+      }, currentPreviewFile.type);
+      return;
+    } else {
+      filesToUpload = [currentPreviewFile];
+      closeMediaPreview();
+      await uploadChatMedia(filesToUpload);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+
+  if (confirmBtn) confirmBtn.disabled = false;
+}
+
+function formatTime(seconds) {
+  if (isNaN(seconds)) return "0:00";
+  const m = Math.floor(seconds / 60);
+  const s = Math.floor(seconds % 60);
+  return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
+
+function formatMsgTime(isoString) {
+  if (!isoString) return "";
+  const date = new Date(isoString);
+  return date.toLocaleTimeString('ar-EG', { hour: 'numeric', minute: '2-digit', hour12: true });
+}
+
+function replaceIcon(id, iconName) {
+  const oldIcon = document.getElementById(id);
+  if (!oldIcon) return;
+  const newIcon = document.createElement('i');
+  newIcon.id = id;
+  newIcon.setAttribute('data-lucide', iconName);
+  oldIcon.parentNode.replaceChild(newIcon, oldIcon);
+  iconRefresh();
+}
+
+function toggleLocalAudio(songId) {
+  const audio = document.getElementById(`audio-${songId}`);
+  if (!audio) return;
+
+  // Pause all other local audios
+  document.querySelectorAll('audio[id^="audio-"]').forEach(el => {
+    if (el.id !== `audio-${songId}`) {
+      el.pause();
+      const otherId = el.id.replace('audio-', '');
+      replaceIcon(`play-icon-${otherId}`, 'play');
+    }
+  });
+
+  if (audio.paused) {
+    audio.play();
+    replaceIcon(`play-icon-${songId}`, 'pause');
+  } else {
+    audio.pause();
+    replaceIcon(`play-icon-${songId}`, 'play');
+  }
+}
+
+function updateProgress(songId) {
+  const audio = document.getElementById(`audio-${songId}`);
+  const progress = document.getElementById(`progress-${songId}`);
+  const timeLabel = document.getElementById(`time-${songId}`);
+
+  if (!audio || !progress || !timeLabel) return;
+
+  if (audio.duration) {
+    const value = (audio.currentTime / audio.duration) * 100;
+    progress.value = value;
+    timeLabel.textContent = formatTime(audio.currentTime);
+  }
+}
+
+function seekAudio(songId, value) {
+  const audio = document.getElementById(`audio-${songId}`);
+  if (!audio) return;
+  const time = (value / 100) * audio.duration;
+  audio.currentTime = time;
+}
+
+function skipAudio(songId, seconds) {
+  const audio = document.getElementById(`audio-${songId}`);
+  if (!audio) return;
+  audio.currentTime += seconds;
+}
+
+function songEnded(songId) {
+  replaceIcon(`play-icon-${songId}`, 'play');
+}
+
+function openProfileForm() {
+  const profile = state.profile || {};
+  openModal("تعديل ملفي الشخصي", `
+    <form id="profileForm" style="display:flex; flex-direction:column; gap:20px;">
+      <div style="text-align:center;">
+        <img src="${escapeAttr(profile.avatar_url || 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=150&q=80')}" style="width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:15px; border:2px solid var(--gold);">
+        <div>
+          <label class="secondary-btn" style="display:inline-flex; cursor:pointer;">
+            <i data-lucide="camera"></i> تغيير الصورة
+            <input type="file" id="profileAvatarFile" accept="image/*" hidden>
+          </label>
+        </div>
+      </div>
+      <label>
+        <span>الاسم (الدلع)</span>
+        <input name="display_name" value="${escapeAttr(profile.display_name || profile.name || '')}" required>
+      </label>
+      <label>
+        <span>البايو (حالتك أو جملة بتحبها)</span>
+        <input name="bio" value="${escapeAttr(profile.bio || '')}" placeholder="بحبك وبموت فيك ❤️">
+      </label>
+      <div class="split-actions">
+        <button class="secondary-btn" type="button" data-action="close-modal">إلغاء</button>
+        <button class="primary-btn" type="submit" id="profileSubmitBtn"><i data-lucide="save"></i> حفظ</button>
+      </div>
+    </form>
+  `);
+
+  const fileInput = document.getElementById("profileAvatarFile");
+  fileInput.addEventListener("change", (e) => {
+    if (e.target.files[0]) {
+      const url = URL.createObjectURL(e.target.files[0]);
+      document.querySelector('#profileForm img').src = url;
+    }
+  });
+
+  const form = document.getElementById("profileForm");
+  form.onsubmit = async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById("profileSubmitBtn");
+    btn.innerHTML = '<i class="lucide-loader"></i> جاري الحفظ...';
+    btn.disabled = true;
+
+    try {
+      const fd = new FormData(form);
+      const displayName = fd.get("display_name").trim();
+      const bio = fd.get("bio").trim();
+      let avatarUrl = state.profile?.avatar_url || '';
+
+      if (fileInput.files[0]) {
+        const uploadResult = await uploadAsset(fileInput.files[0], "avatars", "image");
+        if (uploadResult.url) {
+          avatarUrl = uploadResult.url;
+        }
+      }
+
+      // Try full update first, fall back to display_name only if columns missing
+      const fullPayload = { display_name: displayName, bio, avatar_url: avatarUrl };
+      let updatedUser = null;
+
+      try {
+        updatedUser = await updateRow("users", state.user.id, fullPayload);
+      } catch (colErr) {
+        // If that fails (probably because 'bio' doesn't exist in DB), try saving display_name and avatar_url (valid columns)
+        try {
+          updatedUser = await updateRow("users", state.user.id, { display_name: displayName, avatar_url: avatarUrl });
+        } catch (e2) {
+          // If that fails too, fall back to display_name only
+          try {
+            updatedUser = await updateRow("users", state.user.id, { display_name: displayName });
+          } catch (e3) { /* ignore */ }
+        }
+        // Store bio & avatar_url locally
+        localStorage.setItem('profile-bio-' + state.user.id, bio);
+        localStorage.setItem('profile-avatar-' + state.user.id, avatarUrl);
+      }
+
+      // Merge everything into state regardless
+      const merged = { ...state.profile, display_name: displayName, bio, avatar_url: avatarUrl };
+      if (updatedUser) Object.assign(merged, updatedUser);
+      state.profile = merged;
+
+      const idx = state.profiles.findIndex(p => p.id === state.user.id);
+      if (idx !== -1) state.profiles[idx] = state.profile;
+
+      if (SUPABASE_READY && state.chatChannel) {
+        state.chatChannel.send({
+          type: "broadcast",
+          event: "profile-sync",
+          payload: state.profile
+        });
+      }
+
+      closeModal();
+      await refreshAndRender();
+    } catch (err) {
+      alert("حصل مشكلة: " + err.message);
+      btn.innerHTML = '<i data-lucide="save"></i> حفظ';
+      btn.disabled = false;
+      iconRefresh();
+    }
+  };
+}
+
+function initDraggableMusic() {
+  const wrapper = document.getElementById("floatingMusicWrapper");
+  const btn = document.getElementById("floatingMusicBtn");
+  const player = document.getElementById("floatingPlayer");
+
+  if (!wrapper || !btn) return;
+
+  let isDragging = false;
+  let hasMoved = false;
+  let startX, startY;
+  let initialLeft, initialTop;
+  let pressTimer = null;
+
+  // Mouse Events
+  btn.addEventListener("mousedown", onDragStart);
+  document.addEventListener("mousemove", onDragMove);
+  document.addEventListener("mouseup", onDragEnd);
+
+  // Touch Events
+  btn.addEventListener("touchstart", onDragStart, { passive: false });
+  document.addEventListener("touchmove", onDragMove, { passive: false });
+  document.addEventListener("touchend", onDragEnd);
+
+  function onDragStart(e) {
+    if (e.type === "touchstart") {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    } else {
+      startX = e.clientX;
+      startY = e.clientY;
+    }
+
+    const rect = wrapper.getBoundingClientRect();
+    initialLeft = rect.left;
+    initialTop = rect.top;
+
+    wrapper.style.right = "auto";
+    wrapper.style.bottom = "auto";
+    wrapper.style.left = initialLeft + "px";
+    wrapper.style.top = initialTop + "px";
+
+    isDragging = true;
+    hasMoved = false;
+    btn.style.cursor = "grabbing";
+    window.isMusicBtnLongPress = false;
+    pressTimer = setTimeout(() => {
+      if (!hasMoved) {
+        window.isMusicBtnLongPress = true;
+        stopMusic();
+      }
+    }, 600);
+  }
+
+  function onDragMove(e) {
+    if (!isDragging) return;
+
+    let clientX, clientY;
+    if (e.type === "touchmove") {
+      clientX = e.touches[0].clientX;
+      clientY = e.touches[0].clientY;
+      e.preventDefault(); // Stop mobile screen scrolling
+    } else {
+      clientX = e.clientX;
+      clientY = e.clientY;
+    }
+
+    const dx = clientX - startX;
+    const dy = clientY - startY;
+
+    if (Math.abs(dx) > 6 || Math.abs(dy) > 6) {
+      hasMoved = true;
+      if (pressTimer) clearTimeout(pressTimer);
+    }
+
+    let newLeft = initialLeft + dx;
+    let newTop = initialTop + dy;
+
+    // Boundaries check
+    const rect = wrapper.getBoundingClientRect();
+    const maxX = window.innerWidth - rect.width;
+    const maxY = window.innerHeight - rect.height;
+
+    newLeft = Math.max(0, Math.min(newLeft, maxX));
+    newTop = Math.max(0, Math.min(newTop, maxY));
+
+    wrapper.style.left = newLeft + "px";
+    wrapper.style.top = newTop + "px";
+  }
+
+  function onDragEnd(e) {
+    if (pressTimer) clearTimeout(pressTimer);
+    if (!isDragging) return;
+    isDragging = false;
+    btn.style.cursor = "grab";
+
+    if (!hasMoved && player) {
+      player.classList.toggle("hidden");
+      // Readjust bounds when player opens/expands
+      setTimeout(adjustPositionBounds, 50);
+    }
+  }
+
+  function adjustPositionBounds() {
+    const rect = wrapper.getBoundingClientRect();
+    let newLeft = rect.left;
+    let newTop = rect.top;
+
+    const maxX = window.innerWidth - rect.width;
+    const maxY = window.innerHeight - rect.height;
+
+    newLeft = Math.max(0, Math.min(newLeft, maxX));
+    newTop = Math.max(0, Math.min(newTop, maxY));
+
+    wrapper.style.left = newLeft + "px";
+    wrapper.style.top = newTop + "px";
+  }
+}
+
+// Push Notifications Setup
+async function setupPushNotifications() {
+  if (window.location.protocol === 'file:') {
+    console.log("Push messaging disabled on local file:// protocol.");
+    return;
+  }
+
+  if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
+    console.log("Push messaging isn't supported.");
+    return;
+  }
+
+  try {
+    const registration = await navigator.serviceWorker.register('/sw.js');
+    console.log('ServiceWorker registered:', registration);
+
+    const permission = await Notification.requestPermission();
+    if (permission !== 'granted') {
+      console.log('Notification permission denied.');
+      return;
+    }
+
+    const subscription = await registration.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: window.LOVE_APP_CONFIG.VAPID_PUBLIC_KEY
+    });
+
+    const subData = JSON.parse(JSON.stringify(subscription));
+
+    // Save to Supabase
+    if (state.user) {
+      await sb.from('push_subscriptions').upsert({
+        user_id: state.user.id,
+        endpoint: subData.endpoint,
+        p256dh: subData.keys.p256dh,
+        auth: subData.keys.auth
+      }, { onConflict: 'endpoint' });
+      console.log('Push subscription saved to DB!');
+    }
+
+  } catch (error) {
+    console.error('Error setting up push notifications:', error);
+  }
+}
+
+// Automatically request notification permissions when user is logged in
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    if (state.user) {
+      setupPushNotifications();
+    }
+  }, 3000);
+});
