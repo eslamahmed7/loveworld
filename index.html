@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#030712" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description"
+    content="تطبيق رومانسي خاص بمحمود ومريم: شات، ذكريات، خريطة حب، كبسولات زمنية، مزيكا، وإحصائيات." />
+  <title>محمود ❤️ مريم</title>
+  <script>
+    window.addEventListener('error', function (e) {
+      document.body.innerHTML += '<div style="position:fixed;top:0;left:0;background:red;color:white;z-index:99999;padding:10px;font-family:sans-serif;">Error: ' + e.message + ' at ' + e.filename + ':' + e.lineno + '</div>';
+    });
+    window.addEventListener('unhandledrejection', function (e) {
+      document.body.innerHTML += '<div style="position:fixed;top:40px;left:0;background:red;color:white;z-index:99999;padding:10px;font-family:sans-serif;">Rejection: ' + e.reason + '</div>';
+    });
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="stars-layer" id="starsLayer" aria-hidden="true"></div>
+  <div class="floating-hearts-bg" aria-hidden="true">
+    <i data-lucide="heart" class="heart-particle"
+      style="left: 10%; animation-delay: 0s; width: 32px; height: 32px;"></i>
+    <i data-lucide="heart" class="heart-particle"
+      style="left: 25%; animation-delay: 2s; width: 24px; height: 24px;"></i>
+    <i data-lucide="heart" class="heart-particle"
+      style="left: 45%; animation-delay: 4s; width: 16px; height: 16px;"></i>
+    <i data-lucide="heart" class="heart-particle"
+      style="left: 65%; animation-delay: 1s; width: 48px; height: 48px;"></i>
+    <i data-lucide="heart" class="heart-particle"
+      style="left: 85%; animation-delay: 5s; width: 20px; height: 20px;"></i>
+    <i data-lucide="heart" class="heart-particle"
+      style="left: 50%; animation-delay: 7s; width: 40px; height: 40px;"></i>
+  </div>
+  <div class="hearts-layer" id="heartsLayer" aria-hidden="true"></div>
+
+  <div id="loader" class="loader video-intro hidden">
+    <video id="introVideo" class="fullscreen-video" playsinline preload="auto">
+      <source src="intro.mp4" type="video/mp4" />
+    </video>
+    <button id="skipIntroBtn" class="skip-intro-btn">
+      <span>دخول الموقع</span>
+      <i data-lucide="chevron-left"></i>
+    </button>
+  </div>
+
+  <main id="authScreen" class="auth-screen hidden">
+    <section class="auth-panel" aria-labelledby="authTitle">
+      <div class="auth-visual" aria-hidden="true">
+        <img src="assets/retro-love-poster.svg" alt="" />
+      </div>
+      <form id="loginForm" class="login-form">
+        <p class="eyebrow">عالم حب خاص</p>
+        <h1 id="authTitle">محمود ❤️ مريم</h1>
+        <label>
+          <span>الإيميل</span>
+          <input id="emailInput" type="email" autocomplete="email" required />
+        </label>
+        <label>
+          <span>الباسورد</span>
+          <input id="passwordInput" type="password" autocomplete="current-password" required />
+        </label>
+        <button class="primary-btn" type="submit">
+          <i data-lucide="log-in"></i>
+          <span>ادخل لعالمنا</span>
+        </button>
+        <p id="authMessage" class="form-message" role="status"></p>
+        <div id="demoHint" class="demo-hint hidden">
+          <strong>وضع تجريبي:</strong>
+          جرب mahmoud@example.com أو mariam@example.com والباسورد love123456
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <div id="appShell" class="app-shell hidden">
+    <!-- Desktop Sidebar -->
+    <aside id="desktopSidebar" class="desktop-sidebar glass-panel"></aside>
+
+    <!-- Center Main Content -->
+    <div class="main-content-wrapper">
+
+      <section class="presence-strip" id="presenceStrip"></section>
+
+      <main id="viewRoot" class="view-root" aria-live="polite"></main>
+
+      <footer class="site-footer">
+        إهداء من محمود ❤️ إلى مريم، حبيبتي وكل دنيتي
+      </footer>
+    </div>
+
+    <!-- Desktop Chat Sidebar -->
+    <aside id="desktopChat" class="desktop-chat glass-panel"></aside>
+
+    <!-- Active Player Bar (Bottom Glassmorphic Player) -->
+    <div id="activePlayerBar" class="active-player-bar">
+      <!-- Left Section: Cover & Info -->
+      <div class="player-left">
+        <img id="activePlayerCover"
+          src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=80&q=80"
+          alt="Cover" />
+        <div class="player-meta-info">
+          <div id="activePlayerTitle" class="player-title">اسم الأغنية</div>
+          <div id="activePlayerArtist" class="player-artist">الفنان</div>
+        </div>
+      </div>
+
+      <!-- Center Section: Playback Controls & Progress -->
+      <div class="player-center">
+        <div class="player-controls">
+          <button class="player-btn" id="playerShuffleBtn" data-action="music-shuffle" title="وضع عشوائي">
+            <i data-lucide="shuffle"></i>
+          </button>
+          <button class="player-btn" id="playerPrevBtn" data-action="music-prev" title="السابق">
+            <i data-lucide="skip-back"></i>
+          </button>
+          <button class="player-play-btn" id="playerPlayPauseBtn" data-action="music-toggle" title="تشغيل/إيقاف">
+            <i data-lucide="play" id="activePlayIcon"></i>
+          </button>
+          <button class="player-btn" id="playerNextBtn" data-action="music-next" title="التالي">
+            <i data-lucide="skip-forward"></i>
+          </button>
+          <button class="player-btn" id="playerRepeatBtn" data-action="music-repeat" title="تكرار الأغنية">
+            <i data-lucide="repeat"></i>
+          </button>
+        </div>
+        <div class="player-progress-container">
+          <span id="playerCurrentTime" class="time-label">0:00</span>
+          <div class="progress-bar-wrapper">
+            <input type="range" id="activePlayerProgress" value="0" max="100" />
+            <div class="progress-bar-fill" id="activePlayerProgressFill"></div>
+          </div>
+          <span id="playerRemainingTime" class="time-label">-0:00</span>
+        </div>
+      </div>
+
+      <!-- Right Section: Visualizer, Volume, and Playlist Menu -->
+      <div class="player-right">
+        <div class="sound-wave-container" id="playerSoundWave">
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+        </div>
+
+        <div class="volume-container">
+          <button class="player-btn" id="playerMuteBtn" data-action="music-mute" title="كتم الصوت">
+            <i data-lucide="volume-2" id="activeVolumeIcon"></i>
+          </button>
+          <input type="range" id="playerVolumeSlider" min="0" max="100" value="100" title="مستوى الصوت" />
+        </div>
+
+        <button class="player-btn" id="playerMenuBtn" data-action="music-menu" title="قائمة الأغاني">
+          <i data-lucide="list-music"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav id="bottomNav" class="bottom-nav glass-panel" aria-label="التنقل الرئيسي"></nav>
+
+    <!-- Floating Background Music Button -->
+    <div id="floatingMusicWrapper" class="hidden" style="position: fixed; bottom: 80px; left: 20px; z-index: 1000;">
+      <button id="floatingMusicBtn" class="primary-btn" type="button" data-action="music-toggle"
+        title="تشغيل / إيقاف (ضغطة مطولة للقفل)"
+        style="border-radius: 50%; width: 56px; height: 56px; padding: 0; box-shadow: 0 4px 15px rgba(255, 79, 168, 0.4); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <i data-lucide="music" style="width: 24px; height: 24px; margin: 0;"></i>
+      </button>
+    </div>
+  </div>
+
+  <dialog id="modal" class="modal">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 id="modalTitle"></h3>
+        <button class="icon-btn" type="button" data-action="close-modal" title="قفل">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </dialog>
+
+  <audio id="audioPlayer" preload="metadata"></audio>
+
+  <dialog id="mediaPreviewModal" class="modal">
+    <div class="modal-box" style="max-width: 500px; padding: 0;">
+      <div class="modal-head" style="padding: 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+        <h3 id="mediaPreviewTitle">تجهيز الميديا</h3>
+        <button class="icon-btn" type="button" data-action="close-media-preview" title="قفل">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div id="mediaPreviewBody"
+        style="background: #000; display: flex; justify-content: center; align-items: center; min-height: 250px; max-height: 60vh; overflow: hidden;">
+      </div>
+      <div class="modal-actions"
+        style="padding: 15px; display: flex; gap: 10px; justify-content: flex-end; background: var(--surface);">
+        <button class="secondary-btn" type="button" data-action="close-media-preview">إلغاء</button>
+        <button class="primary-btn" type="button" id="confirmMediaBtn"><i data-lucide="send"></i> إرسال</button>
+      </div>
+    </div>
+  </dialog>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
